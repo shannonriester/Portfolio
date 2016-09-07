@@ -1,12 +1,15 @@
 import React from 'react';
+import Scroll from 'react-scroll';
 
-import Nav from '../Components/Nav';
+var Element = Scroll.Element;
+
 
 export default React.createClass({
   render() {
     return (
       <div className="resume-page">
-        Resume component
+        <Element name="ResumePage"/>
+        <figure className="resume-figure" style={{backgroundImage: `url(/assets/resume_SRiester.jpg)`}}></figure>
       </div>
     );
   }

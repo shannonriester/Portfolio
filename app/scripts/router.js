@@ -9,9 +9,10 @@ import AboutMePage from './Pages/AboutMePage';
 const router = (
   <Router history={browserHistory}>
     <Route path="/Home" component={MainPage} />
-    <Route path="/Portfolio" component={PortfolioPage}/>
-    <Route path="/Resume" component={ResumePage}/>
-    <Route path="/AboutMe" component={AboutMePage}/>
+    { //<Route path="/Portfolio" component={PortfolioPage}/>
+      //<Route path="/Resume" component={ResumePage}/>
+      //<Route path="/AboutMe" component={AboutMePage}/>
+  }
   </Router>
 );
 

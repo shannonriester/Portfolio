@@ -75,6 +75,11 @@
   line-height: 2;
   color: #555; }
 
+.resume-figure {
+  height: 30em;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
 body {
   margin: 0;
   padding: 0;
