@@ -1,3 +1,15 @@
+Emails:
+1. post request to kinvey onSubmit
+2. data: {
+  myEmail:
+  senderEmail:
+  message:
+}
+  - this is in the business logic in kinvey
+  - to, from, subjectLine, body
+
+
+
 # Basic Build with NPM scripts
 This is a project scaffolding and build tool for the TIY Austin Front-End Engineering course. Feel free to use and enjoy! Feedback and PRs welcome!
 

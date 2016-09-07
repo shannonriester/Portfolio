@@ -1,3 +1,31 @@
 .portfolio-page {
-  height: 100vh;
+  // display: flex;
+  background: $secondary;
+}
+
+.waggle-preview {
+  // display: inline-flex;
+}
+
+.portfolio-preview {
+  height: 30em;
+  width: 35em;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.portfolio-sides {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-side-item {
+  list-style-type: none;
+  background-size: contain;
+  height: 23em;
 }

@@ -3,6 +3,7 @@ import Scroll from 'react-scroll';
 
 var Element = Scroll.Element;
 
+import Nav from '../Components/Nav';
 
 export default React.createClass({
   render() {
