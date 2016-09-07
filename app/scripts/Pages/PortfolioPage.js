@@ -5,9 +5,9 @@ import Nav from '../Components/Nav';
 export default React.createClass({
   render() {
     return (
-      <div className="main-component">
+      <div className="portfolio-component">
         <Nav />
-        Main component
+        Portfolio component
       </div>
     );
   }
