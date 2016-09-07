@@ -1,7 +1,40 @@
 .main-header {
-  height: 85vh;
+  height: 700px;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 70%;
+}
+
+.hero-section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-btn {
+  height: 50px;
+  width: 150px;
+  margin: 0 3%;
+  // padding: 20px;
+  background: none;
+  border: solid 2px $primary;
+  border-radius: 2px;
+  color: $text-secondary;
+
+  a {
+    color: $text-secondary;
+  }
+}
+
+.resume-btn {
+  // color: $text-primary;
+}
+
+.recent-works-btn {
+  color: $text-secondary;
+  background: $primary;
+  // border: solid 2px $text-secondary;
 }

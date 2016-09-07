@@ -6,7 +6,7 @@ import PortfolioPage from './Pages/PortfolioPage';
 
 const router = (
   <Router history={browserHistory}>
-    <Route path="/Home" component={MainPage}/>
+    <Route path="/Home" component={MainPage} />
     <Route path="/Portfolio" component={PortfolioPage}/>
   </Router>
 );
