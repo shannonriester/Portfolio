@@ -55,7 +55,26 @@
   background: #10B8C7; }
 
 .portfolio-page {
-  height: 100vh; }
+  background: #E1BC29; }
+
+.portfolio-preview {
+  height: 30em;
+  width: 35em;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .portfolio-preview:hover {
+    cursor: pointer; }
+
+.portfolio-sides {
+  margin: 0;
+  padding: 0; }
+
+.portfolio-side-item {
+  list-style-type: none;
+  background-size: contain;
+  height: 23em; }
 
 .profile-figure {
   height: 11em;
@@ -76,9 +95,11 @@
   color: #555; }
 
 .resume-figure {
-  height: 30em;
+  height: 40em;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  margin: 0 auto;
+  width: 68vw; }
 
 body {
   margin: 0;
