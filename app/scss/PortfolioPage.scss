@@ -11,9 +11,66 @@
   height: 30em;
   width: 35em;
   margin: 0 auto;
+  margin-bottom: 3em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  &:hover {
+    // cursor: pointer;
+  }
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  // padding: 1%;
+  height: 0px;
+  width: 100%;
+  p, ul {
+    opacity: 0;
+  }
+}
+
+.icons-ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+.preview-footer {
+  transition: height .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: none;
+  height: 100%;
+  width: 100%;
+  &:hover {
+    .footer-content {
+      transition: .5s;
+      height: 90px;
+      p, ul {
+        transition-delay: .2s;
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+p {
+  margin: 0;
+  width: 60%;
+  color: $text-primary;
+}
+
+.app-label {
+  margin: 0 5px;
   &:hover {
     cursor: pointer;
   }

@@ -37,31 +37,67 @@ export default React.createClass({
     if (this.state.footerWaggle) {
       footerWaggle = (
           <footer className="preview-footer">
-            <p className="preview-about-app">A location-based, social-media app that allows you to search for dog-friendly places, find cute dogs, and meet other local dog-lovers!</p>
-            <a className="portfolio-live-link" href="http://_waggle.surge.sh/">
-              <i className="fa fa-external-link" aria-hidden="true"></i>
-              <label className="app-label">Check it out</label>
-            </a>
+            <section className="footer-content">
+              <p className="preview-about-app">A location-based, social-media app that allows you to search for dog-friendly places, find cute dogs, and meet other local dog-lovers!</p>
+              <ul className="icons-ul">
+                <li>
+                  <a className="portfolio-live-link" href="http://_waggle.surge.sh/">
+                    <i className="fa fa-external-link" aria-hidden="true"></i>
+                    <label className="app-label"> Live site</label>
+                  </a>
+                </li>
+                <li>
+                  <a className="portfolio-live-link" href="https://github.com/shannonriester/Waggle">
+                    <i className="fa fa-github-square" aria-hidden="true"></i>
+                    <label className="app-label"> GitHub</label>
+                  </a>
+                </li>
+              </ul>
+            </section>
           </footer>);
     }
     if (this.state.footerBeatBands) {
       footerBeatBands = (
           <footer className="preview-footer">
-            <p className="preview-about-app">A quick preview about Beat the Bands!</p>
-            <a className="portfolio-live-link" href="https://shannonriester.github.io/Beat-The-Bands-day-38/">
-              <i className="fa fa-external-link" aria-hidden="true"></i>
-              <label className="app-label">Check it out</label>
-            </a>
+            <section className="footer-content">
+              <p className="preview-about-app">A quick preview about Beat the Bands!</p>
+              <ul className="icons-ul">
+                <li>
+                  <a className="portfolio-live-link" href="https://shannonriester.github.io/Beat-The-Bands-day-38/">
+                    <i className="fa fa-external-link" aria-hidden="true"></i>
+                    <label className="app-label"> Live site</label>
+                  </a>
+                </li>
+                <li>
+                  <a className="portfolio-live-link" href="https://github.com/shannonriester/Beat-The-Bands-day-38">
+                    <i className="fa fa-github-square" aria-hidden="true"></i>
+                    <label className="app-label"> GitHub</label>
+                  </a>
+                </li>
+              </ul>
+            </section>
           </footer>);
     }
     if (this.state.footerJeopardy) {
       footerJeopardy = (
           <footer className="preview-footer">
-            <p className="preview-about-app">A quick preview about my Jeopardy app!</p>
-            <a className="portfolio-live-link" href="http://jeopardy_sriester.surge.sh/">
-              <i className="fa fa-external-link" aria-hidden="true"></i>
-              <label className="app-label">Check it out</label>
-            </a>
+            <section className="footer-content">
+              <p className="preview-about-app">A quick preview about my Jeopardy app!</p>
+              <ul className="icons-ul">
+                <li>
+                  <a className="portfolio-live-link" href="http://jeopardy_sriester.surge.sh/">
+                    <i className="fa fa-external-link" aria-hidden="true"></i>
+                    <label className="app-label"> Live site</label>
+                  </a>
+                </li>
+                <li>
+                  <a className="portfolio-live-link" href="https://github.com/shannonriester/Day-33-Jeopardy">
+                    <i className="fa fa-github-square" aria-hidden="true"></i>
+                    <label className="app-label"> GitHub</label>
+                  </a>
+                </li>
+              </ul>
+            </section>
           </footer>);
     }
 
