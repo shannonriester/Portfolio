@@ -1,8 +1,3 @@
-.about-me-page {
-  // position: relative;
-  // top: 45px;
-}
-
 .profile-figure {
   height: 11em;
   width: 11em;
@@ -14,7 +9,6 @@
 
 .profile-figcaption {
   text-align: center;
-  // font-weight: bold;
   font-size: 1.5em;
   color: $text-primary;
 }
@@ -45,4 +39,52 @@
 .profile-skills-li {
   list-style-type: none;
   color: $text-primary;
+}
+
+@media (min-width: 600px) {
+  .mission-statement {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  .mission-statement {
+    width: 35em;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .about-me-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header, .profile-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-main {
+    border: none;
+    border-left: solid 1px $border-lite;
+  }
+
+  .profile-skills-ul {
+    padding-left: 20px;
+    margin: 0;
+    width: 70%;
+  }
+
+  .profile-skills-left {
+    text-align: left;
+  }
+
+
+  .mission-statement {
+    width: 30em;
+  }
 }
