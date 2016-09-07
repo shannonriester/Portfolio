@@ -61,10 +61,51 @@
   height: 30em;
   width: 35em;
   margin: 0 auto;
+  margin-bottom: 3em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
-  .portfolio-preview:hover {
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  height: 0px;
+  width: 100%; }
+  .footer-content p, .footer-content ul {
+    opacity: 0; }
+
+.icons-ul {
+  margin: 0;
+  padding: 0; }
+  .icons-ul li {
+    list-style-type: none; }
+
+.preview-footer {
+  transition: height .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: none;
+  height: 100%;
+  width: 100%; }
+  .preview-footer:hover .footer-content {
+    transition: .5s;
+    height: 90px; }
+    .preview-footer:hover .footer-content p, .preview-footer:hover .footer-content ul {
+      transition-delay: .2s;
+      opacity: 1; }
+
+p {
+  margin: 0;
+  width: 60%;
+  color: #555; }
+
+.app-label {
+  margin: 0 5px; }
+  .app-label:hover {
     cursor: pointer; }
 
 .portfolio-sides {
