@@ -13,7 +13,7 @@
   margin: 0; }
 
 .nav-li {
-  margin: 3%;
+  margin: 2.5%;
   list-style-type: none;
   border-bottom: solid 1px transparent; }
   .nav-li a {
@@ -54,10 +54,14 @@
 .portfolio-page {
   height: 100vh; }
 
+.about-me-page {
+  position: relative;
+  top: 45px; }
+
 .profile-figure {
   height: 11em;
   width: 11em;
-  margin: 2em auto;
+  margin: 25px auto;
   border-radius: 50%;
   background-size: cover; }
 
