@@ -224,6 +224,38 @@ p {
   list-style-type: none;
   color: #555; }
 
+@media (min-width: 600px) {
+  .mission-statement {
+    width: 70%; } }
+@media (min-width: 900px) {
+  .mission-statement {
+    width: 35em; } }
+@media (min-width: 1000px) {
+  .about-me-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+
+  header, .profile-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  .profile-main {
+    border: none;
+    border-left: solid 1px #BCBDC0; }
+
+  .profile-skills-ul {
+    padding-left: 20px;
+    margin: 0;
+    width: 70%; }
+
+  .profile-skills-left {
+    text-align: left; }
+
+  .mission-statement {
+    width: 30em; } }
 .resume-figure {
   height: 40em;
   background-repeat: no-repeat;
