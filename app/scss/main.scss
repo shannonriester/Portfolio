@@ -1,0 +1,19 @@
+@import '_variables.scss';
+@import 'MainPage.scss';
+@import 'Nav.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', serif;
+  // line-height: 125;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+  &:hover {
+    transition: border .5s;
+    border-bottom: solid 1px $text;
+  }
+}
