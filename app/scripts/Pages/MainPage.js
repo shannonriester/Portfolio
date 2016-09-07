@@ -12,7 +12,7 @@ export default React.createClass({
           <Nav />
           <section className="hero-section">
             <button className="hero-btn recent-works-btn"><Link to={"/Portfolio"}>Recent Works</Link></button>
-            <button className="hero-btn resume-btn">Résumé</button>
+            <button className="hero-btn resume-btn"><Link to={"/Resume"}>Résumé</Link></button>
           </section>
         </div>
 

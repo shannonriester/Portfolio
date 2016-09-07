@@ -1,0 +1,21 @@
+.profile-figure {
+  height: 11em;
+  width: 11em;
+  margin: 2em auto;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.profile-figcaption {
+  text-align: center;
+  // font-weight: bold;
+  font-size: 1.5em;
+  color: $text-primary;
+}
+
+.mission-statement {
+  width: 90%;
+  margin: 1.5em auto;
+  line-height: 2;
+  color: $text-primary;
+}
