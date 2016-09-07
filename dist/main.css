@@ -1,5 +1,6 @@
 .nav-component {
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   width: 100%;
@@ -18,12 +19,14 @@
   border-bottom: solid 1px transparent; }
   .nav-li a {
     color: #555; }
+    .nav-li a:hover {
+      cursor: pointer; }
   .nav-li:hover {
     transition: .5s;
     border-bottom: solid 1px #555; }
 
 .main-header {
-  height: 700px;
+  height: 50em;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,10 +56,6 @@
 
 .portfolio-page {
   height: 100vh; }
-
-.about-me-page {
-  position: relative;
-  top: 45px; }
 
 .profile-figure {
   height: 11em;
