@@ -17,6 +17,7 @@ export default React.createClass({
             <p className="mission-statement">I pride myself in my pursuit of mastery in life: I triple-majored for my undergraduate education; I moved to France to immerse myself in its culture and language; I completed a full marathon before ever running a half-marathon; I expanded my passion for programming, graduating from an intense training program, the Iron Yard, to become a software engineer.</p>
           </header>
           <main className="profile-main">
+            <h2>Skills</h2>
             <ul className="profile-skills-ul profile-skills-left">
               <li className="profile-skills-li">JavaScript</li>
               <li className="profile-skills-li">React</li>
@@ -33,7 +34,7 @@ export default React.createClass({
             </ul>
           </main>
           <footer className="profile-footer">
-
+          
           </footer>
       </div>
     );

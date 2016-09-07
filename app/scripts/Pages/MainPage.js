@@ -5,6 +5,7 @@ var Link = Scroll.Link;
 var Element = Scroll.Element;
 
 import Nav from '../Components/Nav';
+import ConnectNav from '../Components/ConnectNav';
 import AboutMePage from './AboutMePage';
 import PortfolioPage from './PortfolioPage';
 // import ResumePage from './ResumePage';
@@ -23,6 +24,7 @@ export default React.createClass({
           </section>
         </div>
         <AboutMePage />
+        <ConnectNav />
         <PortfolioPage />
       </div>
     );

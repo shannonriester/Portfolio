@@ -1,0 +1,101 @@
+.connect-nav-component {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px $border-lite;
+  // border-top: solid 1px $border-lite;
+}
+.connect-ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.connect-icon {
+  font-size: 4em;
+  color: $primary;
+}
+
+.connect-li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  list-style-type: none;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6em;
+    width: 6em;
+    background: $background-lite;
+    border-radius: 50%;
+
+    &:hover {
+      transition: .5s;
+      background: $primary;
+
+      .connect-icon {
+        transition: .5s;
+        color: $background-lite;
+      }
+    }
+  }
+
+  h3 {
+    color: $headings;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  p {
+    width: 50%;
+    color: #848184;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+
+@media (min-width: 850px) {
+  .connect-nav-component {
+    height: 45vh;
+  }
+
+  .connect-li {
+    width: 25%;
+    p {
+      width: 70%;
+    }
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .connect-nav-component {
+    height: 40vh;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .connect-li {
+    width: 25%;
+    p {
+      width: 60%;
+    }
+  }
+
+}

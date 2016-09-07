@@ -25,6 +25,78 @@
     transition: .5s;
     border-bottom: solid 1px #555; }
 
+.connect-nav-component {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px #BCBDC0; }
+
+.connect-ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.connect-icon {
+  font-size: 4em;
+  color: #10B8C7; }
+
+.connect-li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  list-style-type: none; }
+  .connect-li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6em;
+    width: 6em;
+    background: #F5F5F5;
+    border-radius: 50%; }
+    .connect-li a:hover {
+      transition: .5s;
+      background: #10B8C7; }
+      .connect-li a:hover .connect-icon {
+        transition: .5s;
+        color: #F5F5F5; }
+  .connect-li h3 {
+    color: #444444;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5; }
+  .connect-li p {
+    width: 50%;
+    color: #848184;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5; }
+
+@media (min-width: 850px) {
+  .connect-nav-component {
+    height: 45vh; }
+
+  .connect-li {
+    width: 25%; }
+    .connect-li p {
+      width: 70%; } }
+@media (min-width: 1000px) {
+  .connect-nav-component {
+    height: 40vh; } }
+@media (min-width: 1200px) {
+  .connect-li {
+    width: 25%; }
+    .connect-li p {
+      width: 60%; } }
 .main-header {
   height: 50em;
   width: 100vw;
@@ -55,7 +127,7 @@
   background: #10B8C7; }
 
 .portfolio-page {
-  background: #E1BC29; }
+  background: #FFD03F; }
 
 .portfolio-preview {
   height: 30em;
@@ -115,7 +187,7 @@ p {
 .portfolio-side-item {
   list-style-type: none;
   background-size: contain;
-  height: 23em; }
+  height: 360px; }
 
 .profile-figure {
   height: 11em;
@@ -133,6 +205,23 @@ p {
   width: 90%;
   margin: 1.5em auto;
   line-height: 2;
+  color: #555; }
+
+.profile-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #BCBDC0; }
+
+.profile-skills-ul {
+  padding: 0;
+  margin: 30px 50px; }
+
+.profile-skills-left {
+  text-align: right; }
+
+.profile-skills-li {
+  list-style-type: none;
   color: #555; }
 
 .resume-figure {

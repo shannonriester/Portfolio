@@ -25,3 +25,24 @@
   line-height: 2;
   color: $text-primary;
 }
+
+.profile-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #BCBDC0;
+}
+
+.profile-skills-ul {
+  padding: 0;
+  margin: 30px 50px;
+}
+
+.profile-skills-left {
+  text-align: right;
+}
+
+.profile-skills-li {
+  list-style-type: none;
+  color: $text-primary;
+}
