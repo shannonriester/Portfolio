@@ -23,7 +23,6 @@
   border: solid 2px $primary;
   border-radius: 2px;
   color: $text-secondary;
-
   a {
     color: $text-secondary;
   }
@@ -31,10 +30,23 @@
 
 .resume-btn {
   // color: $text-primary;
+  &:hover {
+    transition: .5s;
+    color: $primary;
+    background: $text-secondary;
+    border: $text-secondary;
+  }
 }
 
 .recent-works-btn {
   color: $text-secondary;
   background: $primary;
+  &:hover {
+    transition: .5s;
+    background: $text-secondary;
+    a {
+      color: $primary;
+    }
+  }
   // border: solid 2px $text-secondary;
 }
