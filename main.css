@@ -338,6 +338,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 93vh;
   color: #444444; }
 
 .contact-form {
@@ -398,6 +399,17 @@ p {
     transition: .5s;
     color: white;
     background: #10B8C7; }
+
+.confirm-sent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.confirmation-p {
+  font-size: 1em;
+  width: 12em;
+  margin-bottom: 29em; }
 
 body {
   margin: 0;
