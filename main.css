@@ -310,6 +310,14 @@ p {
   margin: 0 auto;
   width: 68vw; }
 
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  color: #444444; }
+
 body {
   margin: 0;
   padding: 0;
