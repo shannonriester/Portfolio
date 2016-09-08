@@ -388,9 +388,10 @@ p {
 .contact-btn {
   width: 60%;
   height: 2.5em;
-  margin: .5em 0 2em 0;
+  margin: .5em 0 0 0;
   color: #10B8C7;
   background: none;
+  font-size: 1em;
   border: none;
   border-radius: 2px;
   outline: none; }

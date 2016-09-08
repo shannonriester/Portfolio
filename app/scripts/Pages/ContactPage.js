@@ -39,7 +39,6 @@ export default React.createClass({
 
   },
   render() {
-    // <button className="contact-btn" onClick={this.contactMe}>Send</button>
     let contact;
     if (this.state.sentEmail) {
       contact = (
