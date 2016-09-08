@@ -13,8 +13,8 @@
 }
 
 .portfolio-preview {
-  height: 30em;
-  width: 40em;
+  height: 15em;
+  width: 25em;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
@@ -31,7 +31,7 @@
   justify-content: space-around;
   background: white;
   height: 0px;
-  width: 100%;
+  // width: 81.5%;
   border-top: none;
   p, ul {
     opacity: 0;
@@ -54,11 +54,12 @@
   align-items: center;
   background: none;
   height: 100%;
-  width: 100%;
+  // width: 100%;
   &:hover {
     .footer-content {
       transition: .5s;
       height: 90px;
+      width: 100%;
       p, ul {
         transition-delay: .2s;
         opacity: 1;
@@ -70,8 +71,9 @@
 
 p {
   margin: 0;
-  width: 60%;
+  width: 65%;
   color: $text-primary;
+  font-size: 12px;
 }
 
 .portfolio-icon, .app-label {
@@ -88,39 +90,46 @@ p {
 }
 
 .portfolio-side-item {
-  // height: 30em;
-  // width: 100%;
-  // background-size: contain;
   list-style-type: none;
 }
 
+@media(min-width: 649px) {
+  .portfolio-preview {
+    height: 24em;
+    width: 40em;
+    margin-bottom: 3em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+@media(min-width: 800px) {
+  .portfolio-preview {
+    height: 29em;
+    width: 48em;
+    margin-bottom: 3em;
+    background-size: cover;
+  }
+}
 
-@media(min-width: 1200px) {
+
+@media(min-width: 1100px) {
   .portfolio-page {
     padding: 2em 0;
   }
 
-  .waggle-preview {
-    width: 58em;
-    height: 34em;
-    margin-bottom: 1em;
-  }
-
   .portfolio-sides {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    // width: 50%;
-    // margin-right: 2%;
   }
 
   .portfolio-side-item {
-    height: 34em;
-    width: 70%;
-    margin: 0;
-    background-size: contain;
-    // background-size: cover;
+    height: 22em;
+    width: 47%;
+    margin: 1em;
+    background-size: cover;
   }
 
   .beat-the-bands-preview {
@@ -129,5 +138,15 @@ p {
 
   .preview-footer {
     width: 100%;
+  }
+}
+
+@media(min-width: 1300px) {
+  .portfolio-side-item {
+    height: 25em;
+    width: 39.5em;
+    margin: 1em;
+    background-size: cover;
+    background-position: center center;
   }
 }
