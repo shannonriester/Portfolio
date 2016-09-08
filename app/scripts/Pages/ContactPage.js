@@ -38,6 +38,7 @@ export default React.createClass({
           <input className="contact-input" placeholder="Subject" tabIndex="3" ref="subject"/>
           <textarea className="contact-message" tabIndex="4" ref="message"></textarea>
           <input className="contact-submit" type="submit" role="button" value="send"/>
+          <button className="contact-btn">Send</button>
         </form>
       </div>
     );

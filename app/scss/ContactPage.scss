@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75vh;
+    // height: 75vh;
     color: $headings;
 }
 
@@ -13,14 +13,13 @@
   align-items: center;
   justify-content: center;
   width: 20em;
-  height: 30em;
   border-bottom: solid 1px $border-lite;
 }
 
 .contact-h2 {
   font-size: 2em;
   width: 6em;
-  margin-bottom: 0;
+  margin: 35px 0 0 0;
 }
 
 .my-email {
@@ -31,12 +30,45 @@
 .contact-input {
   width: 60%;
   height: 3em;
+  margin-bottom: 15px;
+  font-size: 1em;
   outline: none;
   border: none;
   border-bottom: solid 1px $border-lite;
 }
 
 .contact-label {
+  display: none;
   text-align: left;
   width: 60%;
+  // margin: 10px 0;
+}
+
+.contact-message {
+  height: 20em;
+  width: 17em;
+  outline: none;
+  border: solid 1px $border-lite;
+}
+
+.contact-submit {
+  display: none;
+}
+
+.contact-btn {
+  width: 60%;
+  height: 2.5em;
+  margin: .5em 0 2em 0;
+  color: $primary;
+  background: none;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+    background: $primary;
+  }
 }
