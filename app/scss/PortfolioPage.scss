@@ -73,8 +73,9 @@ p {
   color: $text-primary;
 }
 
-.app-label {
+.portfolio-icon, .app-label {
   margin: 0 5px;
+  color: $primary;
   &:hover {
     cursor: pointer;
   }

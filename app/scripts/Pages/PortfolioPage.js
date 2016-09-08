@@ -62,13 +62,13 @@ export default React.createClass({
               <ul className="icons-ul">
                 <li>
                   <a className="portfolio-live-link" href="http://_waggle.surge.sh/">
-                    <i className="fa fa-external-link" aria-hidden="true"></i>
+                    <i className="portfolio-icon fa fa-external-link" aria-hidden="true"></i>
                     <label className="app-label"> Live site</label>
                   </a>
                 </li>
                 <li>
                   <a className="portfolio-live-link" href="https://github.com/shannonriester/Waggle">
-                    <i className="fa fa-github-square" aria-hidden="true"></i>
+                    <i className="portfolio-icon fa fa-github-square" aria-hidden="true"></i>
                     <label className="app-label"> GitHub</label>
                   </a>
                 </li>
@@ -84,13 +84,13 @@ export default React.createClass({
               <ul className="icons-ul">
                 <li>
                   <a className="portfolio-live-link" href="https://shannonriester.github.io/Beat-The-Bands-day-38/">
-                    <i className="fa fa-external-link" aria-hidden="true"></i>
+                    <i className="portfolio-icon fa fa-external-link" aria-hidden="true"></i>
                     <label className="app-label"> Live site</label>
                   </a>
                 </li>
                 <li>
                   <a className="portfolio-live-link" href="https://github.com/shannonriester/Beat-The-Bands-day-38">
-                    <i className="fa fa-github-square" aria-hidden="true"></i>
+                    <i className="portfolio-icon fa fa-github-square" aria-hidden="true"></i>
                     <label className="app-label"> GitHub</label>
                   </a>
                 </li>
@@ -106,13 +106,13 @@ export default React.createClass({
               <ul className="icons-ul">
                 <li>
                   <a className="portfolio-live-link" href="http://jeopardy_sriester.surge.sh/">
-                    <i className="fa fa-external-link" aria-hidden="true"></i>
+                    <i className="portfolio-icon fa fa-external-link" aria-hidden="true"></i>
                     <label className="app-label"> Live site</label>
                   </a>
                 </li>
                 <li>
                   <a className="portfolio-live-link" href="https://github.com/shannonriester/Day-33-Jeopardy">
-                    <i className="fa fa-github-square" aria-hidden="true"></i>
+                    <i className="portfolio-icon fa fa-github-square" aria-hidden="true"></i>
                     <label className="app-label"> GitHub</label>
                   </a>
                 </li>
