@@ -28,7 +28,7 @@
 }
 
 .contact-input {
-  width: 60%;
+  width: 15em;
   height: 3em;
   margin-bottom: 15px;
   font-size: 1em;
@@ -45,9 +45,13 @@
 }
 
 .contact-message {
-  height: 20em;
-  width: 17em;
+  height: 18em;
+  width: 13em;
+  font-size: 1em;
   outline: none;
+  border: solid 1px #BCBDC0;
+  padding: 20px;
+  line-height: 1.4;
   border: solid 1px $border-lite;
 }
 

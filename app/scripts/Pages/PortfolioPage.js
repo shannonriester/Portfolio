@@ -8,10 +8,13 @@ export default React.createClass({
     return {
       footerWaggle: false,
       waggleImgUrl: '/assets/Waggle/SearchResultsPage.png',
-      footerJeopardy: false,
-      jeopardyImgUrl: '/assets/Jeopardy/GameBoard.png',
       footerBeatBands: false,
       beatBandsImgUrl: '/assets/BeatTheBands/SearchPage.png',
+      footerPokemon: false,
+      pokemonImgUrl: '/assets/PokemonGame/BattlePage.png',
+      footerJeopardy: false,
+      jeopardyImgUrl: '/assets/Jeopardy/GameBoard.png',
+
     }
   },
   showFooterWaggle() {
@@ -20,16 +23,22 @@ export default React.createClass({
       waggleImgUrl: '/assets/Waggle/LandingPageBrunch.png',
     });
   },
-  showFooterJeopardy() {
-    this.setState({
-      footerJeopardy: true,
-      jeopardyImgUrl: '/assets/Jeopardy/QuestionModal.png'
-    });
-  },
   showFooterBeatBands() {
     this.setState({
       footerBeatBands: true,
       beatBandsImgUrl: '/assets/BeatTheBands/VoteModal.png',
+    });
+  },
+  showFooterPokemon() {
+    this.setState({
+      footerPokemon: true,
+      pokemonImgUrl: '/assets/PokemonGame/LandingPage.png',
+    });
+  },
+  showFooterJeopardy() {
+    this.setState({
+      footerJeopardy: true,
+      jeopardyImgUrl: '/assets/Jeopardy/QuestionModal.png'
     });
   },
   hideFooterWaggle() {
@@ -38,21 +47,28 @@ export default React.createClass({
       waggleImgUrl: '/assets/Waggle/SearchResultsPage.png',
     });
   },
-  hideFooterJeopardy() {
-    this.setState({
-      footerJeopardy: false,
-      jeopardyImgUrl: '/assets/Jeopardy/GameBoard.png',
-    });
-  },
   hideFooterBeatBands() {
     this.setState({
       footerBeatBands: false,
       beatBandsImgUrl: '/assets/BeatTheBands/SearchPage.png',
     });
   },
+  hideFooterPokemon() {
+    this.setState({
+      footerPokemon: false,
+      pokemonImgUrl: '/assets/PokemonGame/LandingPage.png',
+    });
+  },
+  hideFooterJeopardy() {
+    this.setState({
+      footerJeopardy: false,
+      jeopardyImgUrl: '/assets/Jeopardy/GameBoard.png',
+    });
+  },
   render() {
     let footerWaggle;
     let footerBeatBands;
+    let footerPokemon;
     let footerJeopardy;
     if (this.state.footerWaggle) {
       footerWaggle = (
@@ -98,6 +114,28 @@ export default React.createClass({
             </section>
           </footer>);
     }
+    if (this.state.footerPokemon) {
+      footerPokemon = (
+          <footer className="preview-footer">
+            <section className="footer-content">
+              <p className="preview-about-app">Collaborating on a team can be hard, but my peers and I really pulled together, having so much fun pair-programming, and built this awesome game!</p>
+              <ul className="icons-ul">
+                <li>
+                  <a className="portfolio-live-link" href="https://marklyck.github.io/Pokemon/">
+                    <i className="portfolio-icon fa fa-external-link" aria-hidden="true"></i>
+                    <label className="app-label"> Live site</label>
+                  </a>
+                </li>
+                <li>
+                  <a className="portfolio-live-link" href="https://github.com/MarkLyck/Pokemon">
+                    <i className="portfolio-icon fa fa-github-square" aria-hidden="true"></i>
+                    <label className="app-label"> GitHub</label>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </footer>);
+    }
     if (this.state.footerJeopardy) {
       footerJeopardy = (
           <footer className="preview-footer">
@@ -124,19 +162,24 @@ export default React.createClass({
     return (
       <div className="portfolio-page">
         <Element name="PortfolioPage" />
-        <div className="portfolio-preview waggle-preview"
+        <ul className="portfolio-sides">
+          <li className="portfolio-preview portfolio-side-item waggle-preview"
             style={{backgroundImage:`url(${this.state.waggleImgUrl})`}}
             onMouseEnter={this.showFooterWaggle}
             onMouseLeave={this.hideFooterWaggle}>
             {footerWaggle}
-        </div>
-
-        <ul className="portfolio-sides">
+          </li>
           <li className="portfolio-preview portfolio-side-item beat-the-bands-preview"
             style={{backgroundImage:`url(${this.state.beatBandsImgUrl})`}}
             onMouseEnter={this.showFooterBeatBands}
             onMouseLeave={this.hideFooterBeatBands}>
             {footerBeatBands}
+          </li>
+          <li className="portfolio-preview portfolio-side-item pokemon-preview"
+            style={{backgroundImage:`url(${this.state.pokemonImgUrl})`}}
+            onMouseEnter={this.showFooterPokemon}
+            onMouseLeave={this.hideFooterPokemon}>
+            {footerPokemon}
           </li>
           <li className="portfolio-preview portfolio-side-item jeopardy-preview"
             style={{backgroundImage:`url(${this.state.jeopardyImgUrl})`}}

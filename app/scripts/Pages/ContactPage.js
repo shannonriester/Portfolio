@@ -10,19 +10,23 @@ export default React.createClass({
       sentEmail: false,
     }
   },
-  contactMe() {
+  contactMe(e) {
+    e.preventDefault();
     $.ajax({
       url: `https://baas.kinvey.com/rpc/kid_H1o3YfRo/custom/emails`,
       type: 'POST',
       data: {
         myEmail: 'hello@shannonriester.com',
         senderEmail: this.refs.email.value,
-        subjectLine: this.refs.subject.value,
+        // subjectLine: this.refs.subject.value,
         message: this.refs.message.value
       },
       success: (r) => {
         console.log(r);
         this.setState({sentEmail: true});
+        this.refs.email.value = '';
+        this.refs.subject.value = '';
+        this.refs.message.value = '';
       }
     })
   },
@@ -39,7 +43,7 @@ export default React.createClass({
           <input className="contact-input" placeholder="Subject" tabIndex="3" ref="subject"/>
           <textarea className="contact-message" tabIndex="4" ref="message"></textarea>
           <input className="contact-submit" type="submit" role="button" value="send"/>
-          <button className="contact-btn">Send</button>
+          <button className="contact-btn" onClick={this.contactMe}>Send</button>
         </form>
       </div>
     );
