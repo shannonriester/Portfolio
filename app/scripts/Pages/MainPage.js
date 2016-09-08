@@ -26,6 +26,7 @@ export default React.createClass({
         </div>
         <AboutMePage />
         <ConnectNav />
+        <h2 className="recent-works-heading">Recent Works</h2>
         <PortfolioPage />
       </div>
     );
