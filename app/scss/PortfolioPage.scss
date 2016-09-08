@@ -14,11 +14,12 @@
 
 .portfolio-preview {
   height: 30em;
-  width: 45em;
+  width: 40em;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  margin-bottom: 1em;
   &:hover {
     transition: .5s;
   }
