@@ -315,8 +315,37 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 75vh;
   color: #444444; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20em;
+  height: 30em;
+  border-bottom: solid 1px #BCBDC0; }
+
+.contact-h2 {
+  font-size: 2em;
+  width: 6em;
+  margin-bottom: 0; }
+
+.my-email {
+  color: #10B8C7;
+  margin-top: 0; }
+
+.contact-input {
+  width: 60%;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #BCBDC0; }
+
+.contact-label {
+  text-align: left;
+  width: 60%; }
 
 body {
   margin: 0;

@@ -27,17 +27,19 @@ export default React.createClass({
   },
   render() {
     return (
-      <form className="contact-page" onSubmit={this.contactMe}>
+      <div className="contact-page" onSubmit={this.contactMe}>
         <Element name="ContactPage" />
-        <h2>Questions? Thoughts? Let me know.</h2>
-        <h4 className="my-email">hello@shannonriester.com</h4>
-        <label className="contact-label">Email</label>
-        <input className="contact-input" placeholder="Email" tabIndex="1" ref="email"/>
-        <label className="contact-label">Subject</label>
-        <input className="contact-input" placeholder="Subject" tabIndex="3" ref="subject"/>
-        <textarea className="contact-message" tabIndex="4" ref="message"></textarea>
-        <input className="contact-submit" type="submit" role="button" value="send"/>
-      </form>
+        <form className="contact-form" onSubmit={this.contactMe}>
+          <h2 className="contact-h2">Questions? Thoughts? Let me know.</h2>
+          <h4 className="my-email">hello@shannonriester.com</h4>
+          <label className="contact-label">Email</label>
+          <input className="contact-input" placeholder="Email" tabIndex="1" ref="email"/>
+          <label className="contact-label">Subject</label>
+          <input className="contact-input" placeholder="Subject" tabIndex="3" ref="subject"/>
+          <textarea className="contact-message" tabIndex="4" ref="message"></textarea>
+          <input className="contact-submit" type="submit" role="button" value="send"/>
+        </form>
+      </div>
     );
   }
 });

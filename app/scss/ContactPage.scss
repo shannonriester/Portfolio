@@ -6,3 +6,37 @@
     height: 75vh;
     color: $headings;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20em;
+  height: 30em;
+  border-bottom: solid 1px $border-lite;
+}
+
+.contact-h2 {
+  font-size: 2em;
+  width: 6em;
+  margin-bottom: 0;
+}
+
+.my-email {
+  color: $primary;
+  margin-top: 0;
+}
+
+.contact-input {
+  width: 60%;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px $border-lite;
+}
+
+.contact-label {
+  text-align: left;
+  width: 60%;
+}
