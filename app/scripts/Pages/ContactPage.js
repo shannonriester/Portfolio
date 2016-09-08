@@ -17,6 +17,7 @@ export default React.createClass({
       data: {
         myEmail: 'hello@shannonriester.com',
         senderEmail: this.refs.email.value,
+        subjectLine: this.refs.subject.value,
         message: this.refs.message.value
       },
       success: (r) => {
