@@ -8,6 +8,7 @@ import Nav from '../Components/Nav';
 import ConnectNav from '../Components/ConnectNav';
 import AboutMePage from './AboutMePage';
 import PortfolioPage from './PortfolioPage';
+import ContactPage from './ContactPage';
 
 export default React.createClass({
   routeResume() {
@@ -28,6 +29,7 @@ export default React.createClass({
         <ConnectNav />
         <h2 className="recent-works-heading">Recent Works</h2>
         <PortfolioPage />
+        <ContactPage />
       </div>
     );
   }

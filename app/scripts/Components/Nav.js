@@ -3,12 +3,8 @@ import Scroll from 'react-scroll';
 
 var Link = Scroll.Link;
 
-// import AboutMePage from '../Pages/AboutMePage';
-
 export default React.createClass({
   render() {
-
-      // <li className="nav-li"><Link to="ResumePage" smooth={true} duration={500} offset={-80}>Résumé</Link></li>
     return (
       <nav className="nav-component">
         <ul className="nav-ul">

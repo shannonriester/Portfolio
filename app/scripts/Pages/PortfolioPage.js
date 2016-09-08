@@ -2,7 +2,6 @@ import React from 'react';
 import Scroll from 'react-scroll';
 
 var Element = Scroll.Element;
-// import Nav from '../Components/Nav';
 
 export default React.createClass({
   getInitialState() {
@@ -81,7 +80,7 @@ export default React.createClass({
       footerBeatBands = (
           <footer className="preview-footer">
             <section className="footer-content">
-              <p className="preview-about-app">A quick preview about Beat the Bands!</p>
+              <p className="preview-about-app">Beat the Bands, was built using Spotify's API. Users can vote up/down which artist they'd prefer see visit their city.</p>
               <ul className="icons-ul">
                 <li>
                   <a className="portfolio-live-link" href="https://shannonriester.github.io/Beat-The-Bands-day-38/">
@@ -103,7 +102,7 @@ export default React.createClass({
       footerJeopardy = (
           <footer className="preview-footer">
             <section className="footer-content">
-              <p className="preview-about-app">A quick preview about my Jeopardy app!</p>
+              <p className="preview-about-app">My Jeopardy game renders random categories and questions from actual Jeopardy clues and questions. Play for yourself!</p>
               <ul className="icons-ul">
                 <li>
                   <a className="portfolio-live-link" href="http://jeopardy_sriester.surge.sh/">
