@@ -31,14 +31,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: solid 1px #BCBDC0; }
+  border-bottom: solid 1px #BCBDC0;
+  border-bottom: none; }
 
 .connect-ul {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0; }
@@ -91,7 +91,9 @@
       width: 70%; } }
 @media (min-width: 1000px) {
   .connect-nav-component {
-    height: 40vh; } }
+    height: 40vh;
+    border-top: solid 1px #BCBDC0;
+    border-bottom: none; } }
 @media (min-width: 1200px) {
   .connect-li {
     width: 25%; }
@@ -127,7 +129,7 @@
   background: #10B8C7; }
 
 .portfolio-page {
-  background: #FFD03F; }
+  background: #F6F6F6; }
 
 .portfolio-preview {
   height: 30em;
@@ -144,7 +146,8 @@
   justify-content: space-around;
   background: white;
   height: 0px;
-  width: 100%; }
+  width: 100%;
+  border-top: none; }
   .footer-content p, .footer-content ul {
     opacity: 0; }
 
@@ -185,10 +188,31 @@ p {
   padding: 0; }
 
 .portfolio-side-item {
-  list-style-type: none;
+  height: 360px;
   background-size: contain;
-  height: 360px; }
+  list-style-type: none; }
 
+@media (min-width: 1000px) {
+  .portfolio-page {
+    display: flex; }
+
+  .waggle-preview {
+    margin: 0 5%;
+    background-size: contain;
+    width: 50%; }
+
+  .portfolio-sides {
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+
+  .portfolio-side-item {
+    height: 300px;
+    width: 100%;
+    background-size: cover; }
+
+  .preview-footer {
+    width: 100%; } }
 .profile-figure {
   height: 11em;
   width: 11em;
@@ -234,7 +258,8 @@ p {
   .about-me-page {
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    height: 75vh; }
 
   header, .profile-main {
     display: flex;
@@ -246,9 +271,13 @@ p {
     border: none;
     border-left: solid 1px #BCBDC0; }
 
+  h2 {
+    margin: 0;
+    margin-bottom: 10px; }
+
   .profile-skills-ul {
     padding-left: 20px;
-    margin: 0;
+    margin: 12px 0;
     width: 70%; }
 
   .profile-skills-left {

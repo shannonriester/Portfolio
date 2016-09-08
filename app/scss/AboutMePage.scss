@@ -59,6 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 75vh;
   }
 
   header, .profile-main {
@@ -73,9 +74,14 @@
     border-left: solid 1px $border-lite;
   }
 
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
   .profile-skills-ul {
     padding-left: 20px;
-    margin: 0;
+    margin: 12px 0;
     width: 70%;
   }
 

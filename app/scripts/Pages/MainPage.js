@@ -8,10 +8,11 @@ import Nav from '../Components/Nav';
 import ConnectNav from '../Components/ConnectNav';
 import AboutMePage from './AboutMePage';
 import PortfolioPage from './PortfolioPage';
-// import ResumePage from './ResumePage';
-
 
 export default React.createClass({
+  routeResume() {
+    window.open("/assets/resume_SRiester.pdf");
+  },
   render() {
     return (
       <div className="main-component">
@@ -20,7 +21,7 @@ export default React.createClass({
           <Nav />
           <section className="hero-section">
             <button className="hero-btn recent-works-btn"><Link to="PortfolioPage" smooth={true} duration={500} offset={-80}>Recent Works</Link></button>
-            <button className="hero-btn resume-btn"><Link to="/ResumePage" smooth={true} duration={500} offset={-80}>Résumé</Link></button>
+            <button className="hero-btn resume-btn" onClick={this.routeResume}>Résumé</button>
           </section>
         </div>
         <AboutMePage />

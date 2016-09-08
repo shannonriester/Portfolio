@@ -8,27 +8,48 @@ export default React.createClass({
   getInitialState() {
     return {
       footerWaggle: false,
+      waggleImgUrl: '/assets/Waggle/SearchResultsPage.png',
       footerJeopardy: false,
+      jeopardyImgUrl: '/assets/Jeopardy/GameBoard.png',
       footerBeatBands: false,
+      beatBandsImgUrl: '/assets/BeatTheBands/SearchPage.png',
     }
   },
   showFooterWaggle() {
-    this.setState({footerWaggle: true});
+    this.setState({
+      footerWaggle: true,
+      waggleImgUrl: '/assets/Waggle/LandingPageBrunch.png',
+    });
   },
   showFooterJeopardy() {
-    this.setState({footerJeopardy: true});
+    this.setState({
+      footerJeopardy: true,
+      jeopardyImgUrl: '/assets/Jeopardy/QuestionModal.png'
+    });
   },
   showFooterBeatBands() {
-    this.setState({footerBeatBands: true});
+    this.setState({
+      footerBeatBands: true,
+      beatBandsImgUrl: '/assets/BeatTheBands/VoteModal.png',
+    });
   },
   hideFooterWaggle() {
-    this.setState({footerWaggle: false});
+    this.setState({
+      footerWaggle: false,
+      waggleImgUrl: '/assets/Waggle/SearchResultsPage.png',
+    });
   },
   hideFooterJeopardy() {
-    this.setState({footerWaggle: false});
+    this.setState({
+      footerJeopardy: false,
+      jeopardyImgUrl: '/assets/Jeopardy/GameBoard.png',
+    });
   },
   hideFooterBeatBands() {
-    this.setState({footerWaggle: false});
+    this.setState({
+      footerBeatBands: false,
+      beatBandsImgUrl: '/assets/BeatTheBands/SearchPage.png',
+    });
   },
   render() {
     let footerWaggle;
@@ -105,7 +126,7 @@ export default React.createClass({
       <div className="portfolio-page">
         <Element name="PortfolioPage" />
         <div className="portfolio-preview waggle-preview"
-            style={{backgroundImage:`url(/assets/Waggle/LandingPage.png)`}}
+            style={{backgroundImage:`url(${this.state.waggleImgUrl})`}}
             onMouseEnter={this.showFooterWaggle}
             onMouseLeave={this.hideFooterWaggle}>
             {footerWaggle}
@@ -113,13 +134,13 @@ export default React.createClass({
 
         <ul className="portfolio-sides">
           <li className="portfolio-preview portfolio-side-item beat-the-bands-preview"
-            style={{backgroundImage:`url(/assets/BeatTheBands/SearchPage.png)`}}
+            style={{backgroundImage:`url(${this.state.beatBandsImgUrl})`}}
             onMouseEnter={this.showFooterBeatBands}
             onMouseLeave={this.hideFooterBeatBands}>
             {footerBeatBands}
           </li>
           <li className="portfolio-preview portfolio-side-item jeopardy-preview"
-            style={{backgroundImage:`url(/assets/Jeopardy/GameBoard.png)`}}
+            style={{backgroundImage:`url(${this.state.jeopardyImgUrl})`}}
             onMouseEnter={this.showFooterJeopardy}
             onMouseLeave={this.hideFooterJeopardy}>
             {footerJeopardy}

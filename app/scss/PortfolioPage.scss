@@ -1,6 +1,6 @@
 .portfolio-page {
   // display: flex;
-  background: $secondary;
+  background: #F6F6F6;
 }
 
 .waggle-preview {
@@ -25,9 +25,10 @@
   align-items: center;
   justify-content: space-around;
   background: white;
-  // padding: 1%;
   height: 0px;
   width: 100%;
+  // border: solid 3px $primary;
+  border-top: none;
   p, ul {
     opacity: 0;
   }
@@ -82,7 +83,37 @@ p {
 }
 
 .portfolio-side-item {
-  list-style-type: none;
-  background-size: contain;
   height: 360px;
+  // width: 100%;
+  background-size: contain;
+  list-style-type: none;
+}
+
+
+@media(min-width: 1000px) {
+  .portfolio-page {
+    display: flex;
+  }
+
+  .waggle-preview {
+    margin: 0 5%;
+    background-size: contain;
+    width: 50%;
+  }
+
+  .portfolio-sides {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .portfolio-side-item {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .preview-footer {
+    width: 100%;
+  }
 }
