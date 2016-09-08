@@ -20,24 +20,38 @@ export default React.createClass({
         senderEmail: this.refs.email.value,
         message: this.refs.message.value
       },
-      // success: (r) => {
-      //   console.log(r);
-      //   this.setState({sentEmail: true});
-      //   this.refs.email.value = '';
-      //   this.refs.subject.value = '';
-      //   this.refs.message.value = '';
-      // },
+      success: (r) => {
+        console.log(r);
+      },
       error: (r) => {
         console.log('error', r);
       }
-    })
+    });
+    this.setState({sentEmail: true});
+    window.setTimeout(() => {
+      this.setState({sentEmail: false});
+    }, 60000);
+
+    this.refs.email.value = '';
+    this.refs.subject.value = '';
+    this.refs.message.value = '';
+
+
   },
   render() {
     // <button className="contact-btn" onClick={this.contactMe}>Send</button>
+    let contact;
+    if (this.state.sentEmail) {
+      contact = (
+        <div className="confirm-sent-container">
+          <h2 className="contact-h2">Questions? Thoughts? Let me know.</h2>
+          <h4 className="my-email">hello@shannonriester.com</h4>
+          <p className="confirmation-p">Thanks for your email. I'll be in touch with you soon.</p>
+        </div>
 
-    return (
-      <div className="contact-page" onSubmit={this.contactMe}>
-        <Element name="ContactPage" />
+      );
+    } else {
+      contact = (
         <form className="contact-form" onSubmit={this.contactMe}>
           <h2 className="contact-h2">Questions? Thoughts? Let me know.</h2>
           <h4 className="my-email">hello@shannonriester.com</h4>
@@ -47,7 +61,12 @@ export default React.createClass({
           <input type="text" className="contact-input" placeholder="Subject" tabIndex="3" ref="subject"/>
           <textarea className="contact-message" tabIndex="4" ref="message"></textarea>
           <input className="contact-btn" type="text" type="submit" role="button" value="Send"/>
-        </form>
+        </form>);
+    }
+    return (
+      <div className="contact-page" onSubmit={this.contactMe}>
+        <Element name="ContactPage" />
+        {contact}
       </div>
     );
   }
