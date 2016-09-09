@@ -1,11 +1,15 @@
 import React from 'react';
 import Scroll from 'react-scroll';
 
+import PortfolioPreview from '../Components/PortfolioPreview';
+
 var Element = Scroll.Element;
 
 export default React.createClass({
   getInitialState() {
     return {
+      portfolioImgs: ['/assets/Waggle/SearchResultsPage.png', '/assets/BeatTheBands/SearchPage.png', '/assets/PokemonGame/LandingPage.png', '/assets/Jeopardy/Gameboard.png'],
+      portfolioHover: ['/assets/Waggle/LandingPage.png', '/assets/BeatTheBands/VoteModal.png', '/assets/PokemonGame/BattlePage.png', '/assets/Jeopardy/QuestionModal.png'],
       footerWaggle: false,
       waggleImgUrl: '/assets/Waggle/SearchResultsPage.png',
       footerBeatBands: false,
@@ -158,6 +162,18 @@ export default React.createClass({
             </section>
           </footer>);
     }
+
+    let portfolioHover;
+    //
+    // let portfolioImgs = this.state.portfolioImgs.map((image, i) => {
+    //   return (
+    //     <PortfolioPreview
+    //     onMouseEnter={this.showFooter}
+    //     onMouseLeave={this.hideFooter}
+    //     style={{backgroundImage: `url({image[i]})`}}
+    //     />);
+    // });
+
 
     return (
       <div className="portfolio-page">
