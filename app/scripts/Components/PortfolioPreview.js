@@ -5,8 +5,8 @@ export default React.createClass({
 
 
     return (
-      <li className="portfolio-preview portfolio-side-item waggle-preview">
-
+      <li className="portfolio-preview portfolio-side-item waggle-preview" style={{backgroundImage:`url(${this.props.image})`}}>
+        
       </li>
     );
   }

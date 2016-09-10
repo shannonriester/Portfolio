@@ -10,6 +10,7 @@ export default React.createClass({
     return {
       portfolioImgs: ['/assets/Waggle/SearchResultsPage.png', '/assets/BeatTheBands/SearchPage.png', '/assets/PokemonGame/LandingPage.png', '/assets/Jeopardy/Gameboard.png'],
       portfolioHover: ['/assets/Waggle/LandingPage.png', '/assets/BeatTheBands/VoteModal.png', '/assets/PokemonGame/BattlePage.png', '/assets/Jeopardy/QuestionModal.png'],
+      showFooter: false,
       footerWaggle: false,
       waggleImgUrl: '/assets/Waggle/SearchResultsPage.png',
       footerBeatBands: false,
@@ -164,45 +165,51 @@ export default React.createClass({
     }
 
     let portfolioHover;
-    //
-    // let portfolioImgs = this.state.portfolioImgs.map((image, i) => {
-    //   return (
-    //     <PortfolioPreview
-    //     onMouseEnter={this.showFooter}
-    //     onMouseLeave={this.hideFooter}
-    //     style={{backgroundImage: `url({image[i]})`}}
-    //     />);
-    // });
+
+    let portfolioImgs = this.state.portfolioImgs.map((image, i) => {
+      console.log(image);
+      return (
+        <PortfolioPreview
+        key={i}
+        onMouseEnter={this.showFooter}
+        onMouseLeave={this.hideFooter}
+        image={image}
+        style={{backgroundImage: `url({image})`}}
+        />);
+    });
+
+    // <li className="portfolio-preview portfolio-side-item waggle-preview"
+    //   style={{backgroundImage:`url(${this.state.waggleImgUrl})`}}
+    //   onMouseEnter={this.showFooterWaggle}
+    //   onMouseLeave={this.hideFooterWaggle}>
+    //   {footerWaggle}
+    // </li>
+    // <li className="portfolio-preview portfolio-side-item beat-the-bands-preview"
+    //   style={{backgroundImage:`url(${this.state.beatBandsImgUrl})`}}
+    //   onMouseEnter={this.showFooterBeatBands}
+    //   onMouseLeave={this.hideFooterBeatBands}>
+    //   {footerBeatBands}
+    // </li>
+    // <li className="portfolio-preview portfolio-side-item pokemon-preview"
+    //   style={{backgroundImage:`url(${this.state.pokemonImgUrl})`}}
+    //   onMouseEnter={this.showFooterPokemon}
+    //   onMouseLeave={this.hideFooterPokemon}>
+    //   {footerPokemon}
+    // </li>
+    // <li className="portfolio-preview portfolio-side-item jeopardy-preview"
+    //   style={{backgroundImage:`url(${this.state.jeopardyImgUrl})`}}
+    //   onMouseEnter={this.showFooterJeopardy}
+    //   onMouseLeave={this.hideFooterJeopardy}>
+    //   {footerJeopardy}
+    // </li>
 
 
     return (
       <div className="portfolio-page">
         <Element name="PortfolioPage" />
         <ul className="portfolio-sides">
-          <li className="portfolio-preview portfolio-side-item waggle-preview"
-            style={{backgroundImage:`url(${this.state.waggleImgUrl})`}}
-            onMouseEnter={this.showFooterWaggle}
-            onMouseLeave={this.hideFooterWaggle}>
-            {footerWaggle}
-          </li>
-          <li className="portfolio-preview portfolio-side-item beat-the-bands-preview"
-            style={{backgroundImage:`url(${this.state.beatBandsImgUrl})`}}
-            onMouseEnter={this.showFooterBeatBands}
-            onMouseLeave={this.hideFooterBeatBands}>
-            {footerBeatBands}
-          </li>
-          <li className="portfolio-preview portfolio-side-item pokemon-preview"
-            style={{backgroundImage:`url(${this.state.pokemonImgUrl})`}}
-            onMouseEnter={this.showFooterPokemon}
-            onMouseLeave={this.hideFooterPokemon}>
-            {footerPokemon}
-          </li>
-          <li className="portfolio-preview portfolio-side-item jeopardy-preview"
-            style={{backgroundImage:`url(${this.state.jeopardyImgUrl})`}}
-            onMouseEnter={this.showFooterJeopardy}
-            onMouseLeave={this.hideFooterJeopardy}>
-            {footerJeopardy}
-          </li>
+          {portfolioImgs}
+
         </ul>
       </div>
     );
