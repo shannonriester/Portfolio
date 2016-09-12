@@ -35,8 +35,6 @@ export default React.createClass({
     this.refs.email.value = '';
     this.refs.subject.value = '';
     this.refs.message.value = '';
-
-
   },
   render() {
     let contact;
@@ -64,7 +62,7 @@ export default React.createClass({
     }
     return (
       <div className="contact-page" onSubmit={this.contactMe}>
-        <Element name="ContactPage" />
+        <Element name="Contact" />
         {contact}
       </div>
     );

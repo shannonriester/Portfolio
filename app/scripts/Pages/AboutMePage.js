@@ -10,7 +10,7 @@ export default React.createClass({
 
     return (
       <div className="about-me-page">
-        <Element name="AboutMePage"/>
+        <Element name="AboutMe"/>
           <header>
           <figure className="profile-figure" style={{backgroundImage: `url(/assets/ProfilePic.jpg)`}}></figure>
           <figcaption className="profile-figcaption">Hi, I'm Shannon!</figcaption>

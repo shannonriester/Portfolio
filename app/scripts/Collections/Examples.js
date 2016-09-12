@@ -1,5 +1,3 @@
-import Backbone from 'backbone';
-
 const Examples = [
   {
     name:'Waggle',
@@ -10,7 +8,7 @@ const Examples = [
     githubUrl: 'https://github.com/shannonriester/Waggle',
   },
   {
-    name:'Beat The Bands',
+    name:'BeatTheBands',
     image: '/assets/BeatTheBands/SearchPage.png',
     imgHover: '/assets/BeatTheBands/VoteModal.png',
     aboutBody: 'Beat the Bands, was built using Spotify\'s API. Users can vote up/down which artist they\'d prefer see visit their city.',
@@ -18,7 +16,7 @@ const Examples = [
     githubUrl: 'https://github.com/shannonriester/Beat-The-Bands-day-38',
   },
   {
-    name:'Pokemon Battle Game',
+    name:'PokemonBattleGame',
     image: '/assets/PokemonGame/LandingPage.png',
     imgHover: '/assets/PokemonGame/BattlePage.png',
     aboutBody: 'Collaborating on a team can be hard, but my peers and I really pulled together, having so much fun pair-programming, and built this awesome game!',
@@ -26,14 +24,13 @@ const Examples = [
     githubUrl: 'https://github.com/MarkLyck/Pokemon',
   },
   {
-    name:'Jeopardy Game',
-    image: '/assets/Jeopardy/Gameboard.png',
-    imgHover: '/assets/Jeopardy/QuestionModal.png',
+    name:'JeopardyGame',
+    image: '/assets/Jeopardy/QuestionModal.png',
+    imgHover: '/assets/Jeopardy/Gameboard.png',
     aboutBody: 'My Jeopardy game renders random categories and questions from actual Jeopardy clues and questions. Play for yourself!',
     url: 'http://jeopardy_sriester.surge.sh/',
     githubUrl: 'https://github.com/shannonriester/Day-33-Jeopardy',
   },
-
 ]
 
 export default Examples;

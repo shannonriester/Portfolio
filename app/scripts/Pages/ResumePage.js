@@ -9,7 +9,7 @@ export default React.createClass({
   render() {
     return (
       <div className="resume-page">
-        <Element name="ResumePage"/>
+        <Element name="Resume"/>
         <figure className="resume-figure" style={{backgroundImage: `url(/assets/resume_SRiester.jpg)`}}></figure>
       </div>
     );

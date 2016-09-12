@@ -1,15 +1,16 @@
 import React from 'react';
+import { browserHistory } from 'react-router';
 
 export default React.createClass({
   getInitialState() {
     return {
       examples: [],
       hoverImg: false,
-      // hoverImg: false,
     }
   },
   routeToExample() {
-    
+    // console.log(this.props.example.name);
+    browserHistory.push(`/Projects/${this.props.example.name}`)
   },
   showFooter() {
     this.setState({hoverImg: true});

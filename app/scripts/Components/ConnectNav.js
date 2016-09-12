@@ -7,7 +7,7 @@ export default React.createClass({
   render() {
     return (
       <nav className="connect-nav-component">
-      <Element name="ConnectComponent" />
+      <Element name="Connect" />
         <ul className="connect-ul">
           <li className="connect-li">
             <a href="https://github.com/shannonriester">

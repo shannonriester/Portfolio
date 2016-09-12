@@ -23,7 +23,7 @@ export default React.createClass({
 
     return (
       <div className="portfolio-page">
-        <Element name="PortfolioPage" />
+        <Element name="Portfolio" />
         <ul className="portfolio-sides">
           {portfolioPreview}
         </ul>
