@@ -8,6 +8,9 @@ export default React.createClass({
       // hoverImg: false,
     }
   },
+  routeToExample() {
+    
+  },
   showFooter() {
     this.setState({hoverImg: true});
   },
@@ -40,12 +43,11 @@ export default React.createClass({
             </section>
           </footer>);
     }
-
-
     return (
       <li className="portfolio-preview portfolio-side-item waggle-preview" style={{backgroundImage:`url(${imageURL})`}}
       onMouseOver={this.showFooter}
       onMouseLeave={this.hideFooter}
+      onClick={this.routeToExample}
       >
       {footer}
       </li>

@@ -15,7 +15,6 @@ export default React.createClass({
   },
   render() {
     let portfolioPreview = Examples.map((example, i) => {
-      console.log(example);
       return (<PortfolioPreview
         key={i}
         example={example}
