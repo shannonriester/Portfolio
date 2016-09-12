@@ -8,7 +8,8 @@ export default React.createClass({
   routeToLink(e) {
     let link = e.target.innerHTML.split(' ').join('');
     console.log(link);
-    browserHistory.push(link)
+    // browserHistory.push("/");
+    browserHistory.push("/" + link);
   },
   render() {
     return (

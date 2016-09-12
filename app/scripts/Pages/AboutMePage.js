@@ -7,7 +7,7 @@ import Nav from '../Components/Nav';
 export default React.createClass({
   render() {
     var Element = Scroll.Element;
-
+    // console.log(this.props);
     return (
       <div className="about-me-page">
         <Element name="AboutMe"/>

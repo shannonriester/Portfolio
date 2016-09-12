@@ -13,13 +13,14 @@ import ProjectPage from './Pages/ProjectPage';
 
 const router = (
   <Router history={browserHistory}>
-    <Route path="/*" component={MainPage} />
-    <Route path="/Home" component={MainPage}  Link to="MainPage"/>
-    <Route path="/AboutMe" component={MainPage} Link to="AboutMe"/>
-    <Route path="/Portfolio" component={MainPage} Link to="Portfolio"/>
-    <Route path="/Connect" component={MainPage} Link to="Connect"/>
-    <Route path="/Contact" component={MainPage} Link to="Contact"/>
+    <Route path="/Home" component={MainPage} />
+    <Route path="/AboutMe" component={MainPage}/>
+    <Route path="/Portfolio" component={MainPage} />
+    <Route path="/Connect" component={MainPage} />
+    <Route path="/Contact" component={MainPage} />
     <Route path="Projects/:projectName" component={ProjectPage} />
+
+    <Route path="/*" component={MainPage} />
   </Router>
 );
 
