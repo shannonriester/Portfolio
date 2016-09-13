@@ -7,7 +7,7 @@ var Link = Scroll.Link;
 export default React.createClass({
   routeToLink(e) {
     let link = e.target.innerHTML.split(' ').join('');
-    console.log(link);
+    // console.log(link);
     // browserHistory.push("/");
     browserHistory.push("/" + link);
   },
@@ -25,7 +25,7 @@ export default React.createClass({
             <Link to="AboutMe"
                   smooth={true}
                   duration={500}
-                  offset={-80}
+                  offset={-350}
                   onClick={this.routeToLink}>About Me</Link>
           </li>
           <li className="nav-li">

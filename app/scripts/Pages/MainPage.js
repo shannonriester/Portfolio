@@ -17,20 +17,21 @@ export default React.createClass({
   componentDidMount() {
     let path = this.props.route.path.slice(1);
     let offset;
-    if (this.props.route.path === 'Home') {
+    let route = this.props.route.path.slice(1);
+    if (route === 'Home') {
       offset = 0;
-    } else if (this.props.route.path === 'AboutMe') {
-      offset = -100;
-    } else if (this.props.route.path === 'Portfolio') {
+    } else if (route === 'AboutMe') {
+      offset = -300;
+    } else if (route === 'Portfolio') {
       offset = -220;
-    } else if (this.props.route.path === 'Connect') {
+    } else if (route === 'Connect') {
       offset = -225;
-    } else if (this.props.route.path === 'Contact') {
+    } else if (route === 'Contact') {
       offset = -60;
     }
     scroller.scrollTo(`${path}`, {
       duration: 100,
-      // offset: offset,
+      offset: offset,
       delay: 100,
       smooth: true,
     });

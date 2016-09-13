@@ -9,7 +9,7 @@ export default React.createClass({
     }
   },
   routeToExample() {
-    // console.log(this.props.example.name);
+    console.log(this.props.example.name);
     browserHistory.push(`/Projects/${this.props.example.name}`)
   },
   showFooter() {

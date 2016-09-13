@@ -151,8 +151,8 @@
   background: #F6F6F6; }
 
 .portfolio-preview {
-  height: 15em;
-  width: 25em;
+  height: 19em;
+  width: 30em;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
@@ -212,10 +212,10 @@ p {
 .portfolio-side-item {
   list-style-type: none; }
 
-@media (min-width: 649px) {
+@media (min-width: 630px) {
   .portfolio-preview {
-    height: 24em;
-    width: 40em;
+    height: 23em;
+    width: 38em;
     margin-bottom: 3em; }
 
   p {
@@ -332,6 +332,10 @@ p {
   background-size: contain;
   margin: 0 auto;
   width: 68vw; }
+
+.project-heading {
+  position: relative;
+  top: 2em; }
 
 .contact-page {
   display: flex;
