@@ -1,16 +1,18 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
+import { browserHistory, Link } from 'react-router';
 
 export default React.createClass({
   getInitialState() {
     return {
       examples: [],
       hoverImg: false,
+      project: {},
     }
   },
   routeToExample() {
-    console.log(this.props.example.name);
-    browserHistory.push(`/Projects/${this.props.example.name}`)
+    console.log(this.props.example);
+    browserHistory.push(`/Projects/${this.props.example.name}`);
+    // this.setState({project: this.props.example});
   },
   showFooter() {
     this.setState({hoverImg: true});
@@ -18,9 +20,14 @@ export default React.createClass({
   hideFooter() {
     this.setState({hoverImg: false});
   },
+  componentDidMount() {
+
+  },
   render() {
+    let project = this.state.project;
     let footer;
     let imageURL = this.props.example.image;
+
     if (this.state.hoverImg) {
       imageURL = this.props.example.imgHover;
       footer = (
@@ -44,6 +51,7 @@ export default React.createClass({
             </section>
           </footer>);
     }
+
     return (
       <li className="portfolio-preview portfolio-side-item waggle-preview" style={{backgroundImage:`url(${imageURL})`}}
       onMouseOver={this.showFooter}

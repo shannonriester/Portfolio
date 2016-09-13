@@ -1,4 +1,5 @@
 import React from 'react';
+import { browserHistory } from 'react-router';
 import Scroll from 'react-scroll';
 
 var Element = Scroll.Element;
