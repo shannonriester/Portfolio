@@ -3,6 +3,7 @@
   z-index: 1;
   top: 0;
   right: 0;
+  height: 8vh;
   width: 100%;
   background: #E6E6E6; }
 
@@ -333,9 +334,9 @@ p {
   margin: 0 auto;
   width: 68vw; }
 
-.project-heading {
+.project-page {
   position: relative;
-  top: 2em; }
+  top: 8.5vh; }
 
 .contact-page {
   display: flex;

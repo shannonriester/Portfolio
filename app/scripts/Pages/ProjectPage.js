@@ -34,7 +34,7 @@ export default React.createClass({
       <div className="project-page">
         <Nav />
         <h2 className="project-heading">{project.name}</h2>
-        <p className="project-short-about">On day 38 at the Iron Yard, we received a week–long assignment</p>
+        <p className="project-short-about"><span className="italics"></span>.  <span className="italics"></span> </p>
       </div>
     );
   }
