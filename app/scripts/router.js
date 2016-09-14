@@ -20,6 +20,8 @@ const router = (
     <Route path="/Connect" component={MainPage} />
     <Route path="/Contact" component={MainPage} />
 
+    <Route path="/*" component={MainPage} />
+
   </Router>
 );
 

@@ -3,6 +3,9 @@
   z-index: 1;
   top: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   height: 8vh;
   width: 100%;
   background: $background;
@@ -11,15 +14,19 @@
 .nav-ul {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
+  width: 90%;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
 
 .nav-li {
-  // padding: 1%;
-  margin: 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
+  height: 2rem;
   border-bottom: solid 1px transparent;
 
   a {
@@ -32,5 +39,16 @@
   &:hover {
     transition: .5s;
     border-bottom: solid 1px $text-primary;
+  }
+}
+
+@media(min-width: 700px) {
+  .nav-ul {
+    width: 70%;
+  }
+}
+@media(min-width: 950px) {
+  .nav-ul {
+    width: 50%;
   }
 }

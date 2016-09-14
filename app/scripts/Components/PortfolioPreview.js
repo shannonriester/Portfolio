@@ -12,7 +12,6 @@ export default React.createClass({
   routeToExample() {
     console.log(this.props.example);
     browserHistory.push(`/Projects/${this.props.example.name}`);
-    // this.setState({project: this.props.example});
   },
   showFooter() {
     this.setState({hoverImg: true});
@@ -53,12 +52,12 @@ export default React.createClass({
     }
 
     return (
-      <li className="portfolio-preview portfolio-side-item waggle-preview" style={{backgroundImage:`url(${imageURL})`}}
-      onMouseOver={this.showFooter}
-      onMouseLeave={this.hideFooter}
-      onClick={this.routeToExample}
-      >
-      {footer}
+      <li className="portfolio-preview portfolio-side-item"
+          style={{backgroundImage:`url(${imageURL})`}}
+          onMouseOver={this.showFooter}
+          onMouseLeave={this.hideFooter}
+          onClick={this.routeToExample}>
+        {footer}
       </li>
     );
   }

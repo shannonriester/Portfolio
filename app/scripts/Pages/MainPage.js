@@ -44,7 +44,7 @@ export default React.createClass({
         <div className="main-header" style={{backgroundImage: `url(/assets/Desk_Laptop.jpeg)`}}>
           <Nav />
           <section className="hero-section">
-            <button className="hero-btn recent-works-btn"><Link to="/Portfolio" smooth={true} duration={500} offset={-80}>Recent Works</Link></button>
+            <button className="hero-btn recent-works-btn"><Link to="Portfolio" smooth={true} duration={500} offset={-220}>Recent Works</Link></button>
             <button className="hero-btn resume-btn" onClick={this.routeResume}>Résumé</button>
           </section>
         </div>
