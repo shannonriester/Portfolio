@@ -1,7 +1,7 @@
 .project-page {
   position: relative;
   top: 4.5vh;
-  background: $waggle-background;
+  background: $project-background;
   color: #FFF;
 }
 
@@ -9,6 +9,44 @@
   margin-bottom: 0;
   text-align: center;
   font-size: 2rem;
+}
+
+.project-img {
+  margin-bottom: 1rem;
+}
+
+.next-btns {
+  display: flex;
+  width: 20%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slider-btn-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.slider-btn-li, .icon-arrow {
+  height: 1rem;
+  width: 1rem;
+  background: $secondary;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon-arrow {
+  color: $secondary;
+  font-size: 1.5rem;
 }
 
 .project-caption {
@@ -28,22 +66,27 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .project-li {
-  height: 250px;
-  width: 330px;
+  // height: 250px;
+  // width: 330px;
   margin: 0 auto;
   margin-bottom: 1.5rem;
   padding: 10px;
   overflow: scroll;
-  background: white;
-  color: #555;
+  // background: white;
+  color: #FFF;
   line-height: 1.5;
   list-style-type: none;
   border-radius: 2px;
 
   h3 {
+    // color: $primary;
     text-align: center;
     margin: 2px 0 10px 0;
   }
