@@ -29,8 +29,8 @@ export default React.createClass({
           <ProjectSlider project={project}/>
           <figcaption className="project-caption">{project.aboutBody}</figcaption>
           <ul className="project-ul">
-            <li className="project-li project-best"> <h3>The Best</h3> {project.best}</li>
-            <li className="project-li project-hardest"> <h3>The Hardest</h3> {project.hardest}</li>
+            <li className="project-li project-best"> <h3>Highlights</h3> {project.best}</li>
+            <li className="project-li project-hardest"> <h3>Lowlights</h3> {project.hardest}</li>
           </ul>
 
         </div>

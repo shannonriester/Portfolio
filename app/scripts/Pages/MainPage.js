@@ -4,6 +4,7 @@ var scroller = Scroll.scroller;
 var Link = Scroll.Link;
 var Element = Scroll.Element;
 
+
 import Nav from '../Components/Nav';
 import ConnectNav from '../Components/ConnectNav';
 import AboutMePage from './AboutMePage';
@@ -41,7 +42,7 @@ export default React.createClass({
     return (
       <div className="main-component">
         <Element name="Home" />
-        <div className="main-header" style={{backgroundImage: `url(/assets/Desk_Laptop.jpeg)`}}>
+        <div className="main-header" style={{backgroundImage: `url(/assets/Adobe_Geometric.jpeg)`}}>
           <Nav />
           <section className="hero-section">
             <button className="hero-btn recent-works-btn"><Link to="Portfolio" smooth={true} duration={500} offset={-220}>Recent Works</Link></button>

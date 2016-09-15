@@ -8,7 +8,7 @@
   justify-content: flex-end;
   height: 8vh;
   width: 100%;
-  background: $background;
+  // background: $background;
 }
 
 .nav-ul {
@@ -28,9 +28,8 @@
   list-style-type: none;
   height: 2rem;
   border-bottom: solid 1px transparent;
-
   a {
-    color: $text-primary;
+    color: #FFF;
     &:hover {
       cursor: pointer;
     }

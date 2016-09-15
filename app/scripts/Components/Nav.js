@@ -1,7 +1,7 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
+import $ from 'jquery';
 import Scroll from 'react-scroll';
-
 var Link = Scroll.Link;
 
 export default React.createClass({
@@ -10,6 +10,19 @@ export default React.createClass({
     // console.log(link);
     // browserHistory.push("/");
     browserHistory.push("/" + link);
+  },
+  componentDidMount() {
+    $(window).scroll(function(){
+        if($(window).scrollTop() === 0){
+            $(".nav-component").css({"background-color":"rgba(232, 51, 84, 0.0)"});
+        }
+        else if ($(window).scrollTop() < 730){
+            $(".nav-component").css({
+              "background-color":`rgba(227, 29, 78, ${$(window).scrollTop() / 2000 + 0.2})`});
+        } else {
+          $(".nav-component").css({"background-color":"#E83354"});
+        }
+    });
   },
   render() {
     return (
