@@ -1,4 +1,4 @@
-.nav-component {
+.nav-component, .nav2-component {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -31,7 +31,7 @@
       cursor: pointer; }
   .nav-li:hover {
     transition: .5s;
-    border-bottom: solid 1px #555; }
+    border-bottom: solid 1px #FFF; }
 
 @media (min-width: 700px) {
   .nav-ul {
@@ -84,7 +84,7 @@
         transition: .5s;
         color: #F5F5F5; }
   .connect-li h3 {
-    color: #444444;
+    color: #E83354;
     margin: 0;
     text-align: center;
     line-height: 1.5; }
@@ -162,7 +162,8 @@
   padding-top: 1em;
   font-size: 3em;
   text-align: center;
-  background: #F6F6F6; }
+  background: #F6F6F6;
+  color: #E83354; }
 
 .portfolio-preview {
   height: 19em;
@@ -264,7 +265,6 @@ p {
 @media (min-width: 1300px) {
   .portfolio-side-item {
     height: 25em;
-    width: 39.5em;
     margin: 1em;
     background-size: cover;
     background-position: center center; } }
@@ -291,6 +291,8 @@ p {
   align-items: center;
   justify-content: center;
   border: solid 1px #BCBDC0; }
+  .profile-main h2 {
+    color: #E83354; }
 
 .profile-skills-ul {
   padding: 0;
@@ -350,7 +352,6 @@ p {
 .project-page {
   position: relative;
   top: 4.5vh;
-  background: #A4A5AE;
   color: #FFF; }
 
 .project-heading {
@@ -381,13 +382,13 @@ p {
 .slider-btn-li {
   height: 1rem;
   width: 1rem;
-  background: #FFD03F;
+  background: #E83354;
   border-radius: 50%; }
   .slider-btn-li:hover {
     cursor: pointer; }
 
 .icon-arrow {
-  color: #FFD03F;
+  color: #E83354;
   font-size: 1.5rem; }
 
 .project-caption {
@@ -414,26 +415,13 @@ p {
   margin-bottom: 1.5rem;
   padding: 10px;
   overflow: scroll;
-  color: #FFF;
+  color: #555;
   line-height: 1.5;
   list-style-type: none;
   border-radius: 2px; }
   .project-li h3 {
     text-align: center;
     margin: 2px 0 10px 0; }
-
-.ul-other-projects {
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.li-other-projects {
-  height: 200px;
-  width: 33.2%;
-  list-style-type: none; }
-  .li-other-projects:hover {
-    background-color: rgba(16, 184, 199, 0.5);
-    cursor: pointer;
-    z-index: 1; }
 
 .figure-other-projects {
   position: relative;
@@ -469,7 +457,7 @@ p {
   align-items: center;
   justify-content: center;
   height: 93vh;
-  color: #444444; }
+  color: #E83354; }
 
 .contact-form {
   display: flex;
