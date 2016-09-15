@@ -3,7 +3,7 @@ const Examples = [
     name:'Waggle',
     image: '/assets/Waggle/SearchResultsPage.png',
     imgHover: '/assets/Waggle/LandingPageBrunch.png',
-    projectImages: ['/assets/Waggle/LandingPageBrunch.png', '/assets/Waggle/MatchedView.png', '/assets/Waggle/MobileMapView.png', '/assets/Waggle/SearchResultsPage.png', '/assets/Waggle/Code_ResultsPage.png'],
+    projectImages: ['/assets/Waggle/LandingPageBrunch.png', '/assets/Waggle/MatchedView.png', '/assets/Waggle/MobileMapView.png', '/assets/Waggle/SearchResultsPage.png', '/assets/Waggle/Code_GoogleAPI.png'],
     aboutBody: 'A location-based, social-media app that allows you to search for dog-friendly places, find cute dogs, and meet other local dog-lovers!',
     url: 'http://_waggle.surge.sh/',
     githubUrl: 'https://github.com/shannonriester/Waggle',

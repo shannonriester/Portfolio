@@ -7,8 +7,6 @@ var Link = Scroll.Link;
 export default React.createClass({
   routeToLink(e) {
     let link = e.target.innerHTML.split(' ').join('');
-    // console.log(link);
-    // browserHistory.push("/");
     browserHistory.push("/" + link);
   },
   componentDidMount() {

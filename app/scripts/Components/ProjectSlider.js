@@ -16,7 +16,6 @@ export default React.createClass({
       newI = 0;
     }
     this.setState({
-
       slide: 'slide-out-left'
     });
     window.setTimeout(() => {
@@ -24,7 +23,7 @@ export default React.createClass({
         i: newI,
         slide: 'slide-in-right',
     });
-  }, 500);
+    }, 500);
   },
   slideRight() {
     let newI;
@@ -34,15 +33,14 @@ export default React.createClass({
       newI = 4;
     }
     this.setState({
-
-      slide: 'slide-out-left'
+      slide: 'slide-out-right'
     });
     window.setTimeout(() => {
       this.setState({
         i: newI,
-        slide: 'slide-in-right',
+        slide: 'slide-in-left',
     });
-  }, 500);
+    }, 500);
   },
   skipToImg(e) {
     this.setState({i: e.target.value})
@@ -51,9 +49,13 @@ export default React.createClass({
     this.setState({i: 0});
   },
   render() {
-    console.log(this.state.i);
     let sliderBtns = this.state.images.map((url, i) => {
-      return (<li key={i} className="slider-btn-li" onClick={this.skipToImg} value={i}></li>)
+      let currentImg;
+      if (this.state.i === i) {
+        console.log(i);
+        currentImg = 'current-image';
+      }
+      return (<li key={i} id={currentImg} className="slider-btn-li" onClick={this.skipToImg} value={i}></li>)
     });
     return (
       <div className="project-slider-component">
