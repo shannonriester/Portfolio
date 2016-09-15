@@ -1,4 +1,4 @@
-.nav-component {
+.nav-component, .nav2-component {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -37,7 +37,7 @@
 
   &:hover {
     transition: .5s;
-    border-bottom: solid 1px $text-primary;
+    border-bottom: solid 1px #FFF;
   }
 }
 

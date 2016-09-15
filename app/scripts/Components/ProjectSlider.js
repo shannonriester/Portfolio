@@ -16,15 +16,15 @@ export default React.createClass({
       newI = 0;
     }
     this.setState({
-      i: newI,
+
       slide: 'slide-out-left'
     });
-    // this.setState({scroll: 'slide-out-left'});
-  window.setTimeout(() => {
-    this.setState({
-      scroll: 'slide-in-left',
-  });
-  }, 300);
+    window.setTimeout(() => {
+      this.setState({
+        i: newI,
+        slide: 'slide-in-right',
+    });
+  }, 500);
   },
   slideRight() {
     let newI;
@@ -34,21 +34,21 @@ export default React.createClass({
       newI = 4;
     }
     this.setState({
-      i: newI,
-      slide: 'slide-out-right'
+
+      slide: 'slide-out-left'
     });
-    // this.setState({scroll: 'slide-out-right'});
-  window.setTimeout(() => {
-    this.setState({
-      slide: 'slide-in-left',
-  });
-  }, 300);
+    window.setTimeout(() => {
+      this.setState({
+        i: newI,
+        slide: 'slide-in-right',
+    });
+  }, 500);
   },
   skipToImg(e) {
     this.setState({i: e.target.value})
   },
   componentDidMount() {
-    this.setState({currentImg: this.props.project.projectImages[0]});
+    this.setState({i: 0});
   },
   render() {
     console.log(this.state.i);

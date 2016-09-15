@@ -10,6 +10,7 @@
   font-size: 3em;
   text-align: center;
   background: #F6F6F6;
+  color: $headings;
 }
 
 .portfolio-preview {
@@ -144,7 +145,7 @@ p {
 @media(min-width: 1300px) {
   .portfolio-side-item {
     height: 25em;
-    width: 39.5em;
+    // width: 39.5em;
     margin: 1em;
     background-size: cover;
     background-position: center center;

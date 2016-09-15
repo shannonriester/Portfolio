@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Examples from '../Collections/Examples';
-import Nav from '../Components/Nav';
+import Nav2 from '../Components/Nav2';
 import ProjectSlider from '../Components/ProjectSlider';
 
 export default React.createClass({
@@ -23,7 +23,7 @@ export default React.createClass({
 
     return (
       <div className="project-page">
-        <Nav />
+        <Nav2 />
         <div className="project-content-container">
           <h2 className="project-heading">{project.name}</h2>
           <ProjectSlider project={project}/>
