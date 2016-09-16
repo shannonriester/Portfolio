@@ -386,6 +386,8 @@ p {
 
 .project-img {
   margin-bottom: 1rem; }
+  .project-img:hover {
+    cursor: default; }
 
 .next-btns {
   display: flex;
