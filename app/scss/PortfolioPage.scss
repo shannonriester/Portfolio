@@ -23,6 +23,7 @@
   margin-bottom: 1em;
   &:hover {
     transition: .5s;
+    cursor: pointer;
   }
 }
 
@@ -44,6 +45,7 @@
   padding: 0;
   li {
     list-style-type: none;
+    width: 100%;
   }
 }
 
@@ -145,7 +147,6 @@ p {
 @media(min-width: 1300px) {
   .portfolio-side-item {
     height: 25em;
-    // width: 39.5em;
     margin: 1em;
     background-size: cover;
     background-position: center center;
