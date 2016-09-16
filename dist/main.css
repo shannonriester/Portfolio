@@ -122,10 +122,28 @@
 
 .hero-section {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 100%; }
+
+.title-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .title-container h1, .title-container h3 {
+    color: #fff;
+    margin: 0; }
+  .title-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1px; }
+
+.hero-btns-container {
+  display: flex;
+  height: 15%;
+  align-items: flex-end; }
 
 .hero-btn {
   height: 50px;

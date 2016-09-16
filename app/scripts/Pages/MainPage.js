@@ -45,8 +45,14 @@ export default React.createClass({
         <div className="main-header" style={{backgroundImage: `url(/assets/Adobe_Geometric.jpeg)`}}>
           <Nav />
           <section className="hero-section">
-            <button className="hero-btn recent-works-btn"><Link to="Portfolio" smooth={true} duration={500} offset={-220}>Recent Works</Link></button>
-            <button className="hero-btn resume-btn" onClick={this.routeResume}>Résumé</button>
+            <div className="title-container">
+              <h1>Shannon Riester</h1>
+              <h3>Web Developer</h3>
+            </div>
+            <div className="hero-btns-container">
+              <button className="hero-btn recent-works-btn"><Link to="Portfolio" smooth={true} duration={500} offset={-220}>Recent Works</Link></button>
+              <button className="hero-btn resume-btn" onClick={this.routeResume}>Résumé</button>
+            </div>
           </section>
         </div>
         <AboutMePage />
