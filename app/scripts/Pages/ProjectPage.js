@@ -68,7 +68,6 @@ export default React.createClass({
     if (this.state.hardest) {
       hardest = (<p className="project-p project-p-hardest">{project.hardest}</p>);
     }
-    // console.log(this.props);
 
     return (
 
