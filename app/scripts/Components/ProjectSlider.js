@@ -52,7 +52,6 @@ export default React.createClass({
     let sliderBtns = this.state.images.map((url, i) => {
       let currentImg;
       if (this.state.i === i) {
-        console.log(i);
         currentImg = 'current-image';
       }
       return (<li key={i} id={currentImg} className="slider-btn-li" onClick={this.skipToImg} value={i}></li>)

@@ -12,6 +12,10 @@
   color: $primary;
 }
 
+.project-slider-component {
+  margin-bottom: 3rem;
+}
+
 .project-img {
   margin-bottom: 1rem;
 }
@@ -48,6 +52,9 @@
 .icon-arrow {
   color: $secondary;
   font-size: 1.5rem;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .project-caption {
@@ -57,7 +64,6 @@
   margin: 0 auto;
   border-left: solid 1px;
   padding-left: 20px;
-  margin-bottom: 5%;
   color: $text-primary;
 }
 
@@ -67,8 +73,9 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  // height: 30vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
 }
 
@@ -77,11 +84,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  // height: 2rem;
   width: 100%;
   margin: 2% 0;
   color: $text-primary;
-  // line-height: 1.5;
   list-style-type: none;
 
   .project-preview-about {
@@ -97,6 +102,8 @@
     align-items: center;
     justify-content: flex-start;
     margin: 0;
+    position: relative;
+    left: 25px;
     color: $primary;
     text-align: center;
     border-bottom: solid 1px $secondary;
@@ -109,6 +116,9 @@
 
 .about-arrow-icon {
   color: $primary;
+  margin: 0 8px;
+  position: relative;
+  left: 25px;
 }
 
 .project-li:nth-child(2) {
@@ -120,6 +130,8 @@
   }
 
   h3 {
+    left: 0px;
+    // right: 25px;
     justify-content: flex-end;
     border-top: solid 1px $secondary;
     border-bottom: none;
@@ -147,11 +159,36 @@
   box-shadow: inset 0 0 0 3px;
 }
 
-@media(min-width: 600px) {
+@media (min-width: 600px) {
+  .project-caption {
+    width: 70%;
+  }
+
   .project-p {
     margin: 0;
     width: 70%;
     color: $text-primary;
     font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .project-heading {
+    margin-top: 4rem;
+  }
+
+  .project-caption {
+    width: 35rem;
+  }
+
+  .project-p {
+    margin: 0;
+    width: 70%;
+    color: $text-primary;
+    font-size: 1rem;
+  }
+
+  .next-btns {
+    width: 30%;
+    margin-top: 2rem;
   }
 }
