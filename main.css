@@ -405,11 +405,14 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 2rem;
   border-left: solid 1px;
   color: #555; }
+
+.p-project-caption {
+  width: 60%; }
 
 .project-ul, .ul-other-projects {
   display: flex;
@@ -477,7 +480,7 @@ p {
 .project-links-ul {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 35%;
   align-items: center;
   justify-content: center; }
 
@@ -496,7 +499,9 @@ p {
 
 @media (min-width: 600px) {
   .project-caption {
-    width: 65%; }
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1rem; }
 
   .project-p {
     margin: 0;
@@ -506,7 +511,14 @@ p {
 @media (min-width: 800px) {
   .project-img {
     height: 25em;
-    width: 42em; } }
+    width: 42em; }
+
+  .project-caption {
+    width: 72%;
+    margin-left: 20%; }
+
+  .project-links-ul {
+    width: 25%; } }
 @media (min-width: 900px) {
   .project-slider-component {
     margin: 0; } }
