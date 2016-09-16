@@ -30,7 +30,7 @@ export default React.createClass({
     if (this.state.i > 0) {
       newI = this.state.i - 1;
     } else {
-      newI = 4;
+      newI = this.state.images.length - 1;
     }
     this.setState({
       slide: 'slide-out-right'
@@ -49,6 +49,7 @@ export default React.createClass({
     this.setState({i: 0});
   },
   render() {
+    console.log(this.state.images);
     let sliderBtns = this.state.images.map((url, i) => {
       let currentImg;
       if (this.state.i === i) {
@@ -62,13 +63,14 @@ export default React.createClass({
                 id={this.state.slide}
                 style={{backgroundImage:`url(${this.state.images[this.state.i]})`}}>
         </figure>
-        <ul className="slider-btn-ul">
-          {sliderBtns}
-        </ul>
         <section className="next-btns">
           <i className="icon-arrow left fa fa-arrow-left" aria-hidden="true" onClick={this.slideRight}></i>
           <i className="icon-arrow right fa fa-arrow-right" aria-hidden="true" onClick={this.slideLeft}></i>
         </section>
+        <ul className="slider-btn-ul">
+          {sliderBtns}
+        </ul>
+
       </div>
     );
   }
