@@ -68,15 +68,14 @@ export default React.createClass({
     if (this.state.hardest) {
       hardest = (<p className="project-p project-p-hardest">{project.hardest}</p>);
     }
+    // console.log(this.props);
 
     return (
 
       <div className="project-page">
         <Nav2 />
         <div className="project-content-container">
-          <h2 className="project-heading">{project.name}</h2>
           <ProjectSlider project={project}/>
-          <figcaption className="project-caption">{project.aboutBody}</figcaption>
           <ul className="project-ul">
             <li className="project-li project-best" onClick={this.toggleHighlights}>
               <div className="project-preview-about">

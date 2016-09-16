@@ -49,7 +49,6 @@ export default React.createClass({
     this.setState({i: 0});
   },
   render() {
-    console.log(this.state.images);
     let sliderBtns = this.state.images.map((url, i) => {
       let currentImg;
       if (this.state.i === i) {
@@ -59,10 +58,10 @@ export default React.createClass({
     });
     return (
       <div className="project-slider-component">
+        <h2 className="project-heading">{this.props.project.name}</h2>
         <figure className="portfolio-preview project-img"
                 id={this.state.slide}
-                style={{backgroundImage:`url(${this.state.images[this.state.i]})`}}>
-        </figure>
+                style={{backgroundImage:`url(${this.state.images[this.state.i]})`}}></figure>
         <section className="next-btns">
           <i className="icon-arrow left fa fa-arrow-left" aria-hidden="true" onClick={this.slideRight}></i>
           <i className="icon-arrow right fa fa-arrow-right" aria-hidden="true" onClick={this.slideLeft}></i>
@@ -70,6 +69,24 @@ export default React.createClass({
         <ul className="slider-btn-ul">
           {sliderBtns}
         </ul>
+        <figcaption className="project-caption">
+        <p className="p-project-caption">{this.props.project.aboutBody}</p>
+        <ul className="icons-ul project-links-ul">
+          <li>
+            <a className="portfolio-live-link project-live-link" href={this.props.project.url}>
+              <i className="portfolio-icon fa fa-external-link" aria-hidden="true"></i>
+              <label className="app-label"> Live site</label>
+            </a>
+          </li>
+          <li>
+            <a className="portfolio-live-link project-live-link" href={this.props.project.githubUrl}>
+              <i className="portfolio-icon fa fa-github-square" aria-hidden="true"></i>
+              <label className="app-label"> GitHub</label>
+            </a>
+          </li>
+        </ul>
+
+        </figcaption>
 
       </div>
     );

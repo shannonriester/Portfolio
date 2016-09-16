@@ -35,13 +35,13 @@ export default React.createClass({
               <p className="preview-about-app">{this.props.example.aboutBody}</p>
               <ul className="icons-ul">
                 <li>
-                  <a className="portfolio-live-link" href="{this.props.example.url}">
+                  <a className="portfolio-live-link" href={this.props.example.url}>
                     <i className="portfolio-icon fa fa-external-link" aria-hidden="true"></i>
                     <label className="app-label"> Live site</label>
                   </a>
                 </li>
                 <li>
-                  <a className="portfolio-live-link" href="{this.props.example.githubUrl}">
+                  <a className="portfolio-live-link" href={this.props.example.githubUrl}>
                     <i className="portfolio-icon fa fa-github-square" aria-hidden="true"></i>
                     <label className="app-label"> GitHub</label>
                   </a>
