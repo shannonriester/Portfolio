@@ -421,7 +421,6 @@ p {
   width: 100%;
   margin: 2% 0;
   color: #555;
-  line-height: 1.5;
   list-style-type: none; }
   .project-li .project-preview-about {
     display: flex;
@@ -455,12 +454,11 @@ p {
     border-bottom: none; }
 
 .project-p {
-  height: 0; }
-
-.project-p {
-  transition: height .4s;
-  height: 100%;
-  display: block; }
+  margin: 0;
+  width: 80%;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7; }
 
 #current-image {
   height: 1.3rem;
@@ -468,6 +466,12 @@ p {
   border: solid 1px #ef515f;
   box-shadow: inset 0 0 0 3px; }
 
+@media (min-width: 600px) {
+  .project-p {
+    margin: 0;
+    width: 70%;
+    color: #555;
+    font-size: 1rem; } }
 .contact-page {
   display: flex;
   flex-direction: column;
