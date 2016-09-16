@@ -18,6 +18,9 @@
 
 .project-img {
   margin-bottom: 1rem;
+  &:hover {
+    cursor: default;
+  }
 }
 
 .next-btns {
