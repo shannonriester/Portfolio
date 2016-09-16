@@ -174,7 +174,8 @@
   background-position: center center;
   margin-bottom: 1em; }
   .portfolio-preview:hover {
-    transition: .5s; }
+    transition: .5s;
+    cursor: pointer; }
 
 .footer-content {
   display: flex;
@@ -190,7 +191,8 @@
   margin: 0;
   padding: 0; }
   .icons-ul li {
-    list-style-type: none; }
+    list-style-type: none;
+    width: 100%; }
 
 .preview-footer {
   transition: height .5s;
@@ -451,7 +453,8 @@ p {
   color: #10B8C7;
   margin: 0 8px;
   position: relative;
-  left: 25px; }
+  left: 25px;
+  font-size: 20px; }
 
 .project-li:nth-child(2) {
   justify-content: flex-start; }
@@ -464,6 +467,12 @@ p {
     justify-content: flex-end;
     border-top: solid 1px #E83354;
     border-bottom: none; }
+  .project-li:nth-child(2) .about-arrow-icon {
+    color: #10B8C7;
+    margin: 0 8px;
+    position: relative;
+    left: 0px;
+    font-size: 20px; }
 
 .project-links-ul {
   display: flex;
@@ -526,6 +535,13 @@ p {
     color: #555;
     font-size: .95rem;
     line-height: 1.3; } }
+@media (min-width: 1150px) {
+  .project-p {
+    line-height: 1.5;
+    width: 86%; } }
+@media (min-width: 1250px) {
+  .project-p {
+    width: 27rem; } }
 .contact-page {
   display: flex;
   flex-direction: column;
