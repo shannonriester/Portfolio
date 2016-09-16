@@ -31,7 +31,7 @@ const Examples = [
   {
     name:'PokemonBattleGame',
     imgHover: '/assets/PokemonGame/LandingPage.png',
-    image: '/assets/PokemonGame/BattlePage.png',
+    image: '/assets/PokemonGame/BattlePoints.png',
     projectImages: ['/assets/PokemonGame/LandingPage.png', '/assets/PokemonGame/BattlePoints.png', '/assets/PokemonGame/PickPokemon.png', '/assets/PokemonGame/Victory.png'],
     aboutBody: 'Collaborating on a team can be hard, but my peers and I really pulled together, having so much fun pair-programming, and built this awesome game!',
     url: 'https://marklyck.github.io/Pokemon/',
@@ -42,7 +42,7 @@ const Examples = [
   {
     name:'JeopardyGame',
     imgHover: '/assets/Jeopardy/QuestionModal.png',
-    image: '/assets/Jeopardy/Gameboard.png',
+    image: '/assets/Jeopardy/GameBoard.png',
     projectImages: ['/assets/Jeopardy/QuestionModal.png', '/assets/Jeopardy/QuestionModalOld.png', '/assets/Jeopardy/Gameboard.png', '/assets/Jeopardy/Login.png', '/assets/Jeopardy/JeopardyAPI_Function.png'],
     aboutBody: 'My Jeopardy game renders random categories and questions from actual Jeopardy clues and questions. Play for yourself!',
     url: 'http://jeopardy_sriester.surge.sh/',
