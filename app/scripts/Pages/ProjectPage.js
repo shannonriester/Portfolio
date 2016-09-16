@@ -63,10 +63,10 @@ export default React.createClass({
     let highlights;
     let hardest;
     if (this.state.highlights) {
-      highlights = (<p className="project-p-best">{project.best}</p>);
+      highlights = (<p className="project-p project-p-best">{project.best}</p>);
     }
     if (this.state.hardest) {
-      hardest = (<p className="project-p-hardest">{project.hardest}</p>);
+      hardest = (<p className="project-p project-p-hardest">{project.hardest}</p>);
     }
 
     return (
