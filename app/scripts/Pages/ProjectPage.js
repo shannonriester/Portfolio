@@ -8,7 +8,7 @@ import ProjectSlider from '../Components/ProjectSlider';
 export default React.createClass({
   getInitialState() {
     return {
-      highlights: false,
+      highlights: true,
       hardest: false,
     }
   },
