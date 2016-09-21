@@ -16,12 +16,12 @@ export default React.createClass({
       newI = 0;
     }
     this.setState({
-      slide: 'slide-out-right'
+      slide: 'slide-out-left'
     });
     window.setTimeout(() => {
       this.setState({
         i: newI,
-        slide: 'slide-in-left',
+        slide: 'slide-in-right',
     });
   }, 400);
   },
@@ -33,12 +33,12 @@ export default React.createClass({
       newI = this.state.images.length - 1;
     }
     this.setState({
-      slide: 'slide-out-left'
+      slide: 'slide-out-right'
     });
     window.setTimeout(() => {
       this.setState({
         i: newI,
-        slide: 'slide-in-right',
+        slide: 'slide-in-left',
     });
   }, 400);
   },
