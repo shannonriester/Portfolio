@@ -1,4 +1,5 @@
 import React from 'react';
+import { browserHistory } from 'react-router';
 import Scroll from 'react-scroll';
 var scroller = Scroll.scroller;
 var Link = Scroll.Link;
@@ -15,6 +16,9 @@ import ProjectPage from './ProjectPage';
 export default React.createClass({
   routeResume() {
     window.open("/assets/resume_SRiester.pdf");
+  },
+  routeFeature() {
+    browserHistory.push('/Projects/Waggle');
   },
   componentDidMount() {
     let path = this.props.route.path.slice(1);
@@ -50,14 +54,14 @@ export default React.createClass({
               <h3>Web Developer</h3>
             </div>
             <div className="hero-btns-container">
-              <button className="hero-btn recent-works-btn"><Link to="Portfolio" smooth={true} duration={500} offset={-220}>Recent Works</Link></button>
+              <button className="hero-btn recent-works-btn" onClick={this.routeFeature}>Featured Project</button>
               <button className="hero-btn resume-btn" onClick={this.routeResume}>Résumé</button>
             </div>
           </section>
         </div>
         <AboutMePage />
         <ConnectNav />
-        <h2 className="recent-works-heading">Recent Works</h2>
+        <h2 className="recent-works-heading">Portfolio</h2>
         <PortfolioPage />
         <ContactPage />
       </div>
