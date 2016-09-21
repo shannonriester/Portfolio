@@ -42,8 +42,8 @@ const Examples = [
   {
     name:'Jeopardy',
     imgHover: '/assets/Jeopardy/QuestionModal.png',
-    image: '/assets/Jeopardy/GameBoard.png',
-    projectImages: ['/assets/Jeopardy/QuestionModal.png', '/assets/Jeopardy/QuestionModalOld.png', '/assets/Jeopardy/Gameboard.png', '/assets/Jeopardy/Login.png', '/assets/Jeopardy/JeopardyAPI_Function.png'],
+    image: '/assets/Jeopardy/GameBoardCurr.png',
+    projectImages: ['/assets/Jeopardy/QuestionModal.png', '/assets/Jeopardy/QuestionModalOld.png', '/assets/Jeopardy/GameBoardCurr.png', '/assets/Jeopardy/Login.png', '/assets/Jeopardy/JeopardyAPI_Function.png'],
     aboutBody: 'My Jeopardy game renders random categories and questions from actual Jeopardy clues and questions. Play for yourself!',
     url: 'http://jeopardy_sriester.surge.sh/',
     githubUrl: 'https://github.com/shannonriester/Day-33-Jeopardy',

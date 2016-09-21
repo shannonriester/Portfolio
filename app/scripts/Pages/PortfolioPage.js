@@ -22,7 +22,6 @@ export default React.createClass({
         example={example}
         />);
     });
-
     return (
       <div className="portfolio-page">
         <Element name="Portfolio" />
