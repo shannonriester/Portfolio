@@ -49,7 +49,6 @@ export default React.createClass({
             </section>
           </footer>);
     }
-
     return (
       <li className="portfolio-preview portfolio-side-item"
           style={{backgroundImage:`url(${imageURL})`}}
