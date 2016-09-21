@@ -56,6 +56,8 @@ export default React.createClass({
       }
       return (<li key={i} id={currentImg} className="slider-btn-li" onClick={this.skipToImg} value={i}></li>)
     });
+    console.log(this.props.project);
+    console.log(this.state.images);
     return (
       <div className="project-slider-component">
         <h2 className="project-heading">{this.props.project.name}</h2>
