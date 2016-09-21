@@ -52,13 +52,10 @@ export default React.createClass({
     let sliderBtns = this.state.images.map((url, i) => {
       let currentImg;
       if (this.state.i === i) {
-        console.log(url);
         currentImg = 'current-image';
       }
       return (<li key={i} id={currentImg} className="slider-btn-li" onClick={this.skipToImg} value={i}></li>)
     });
-    console.log(this.props.project);
-    console.log(this.state.images);
     return (
       <div className="project-slider-component">
         <h2 className="project-heading">{this.props.project.name}</h2>
