@@ -8,6 +8,7 @@
 .project-content-container {
   position: relative;
   top: 2.5rem;
+  overflow: hidden;
 }
 
 .project-heading {
@@ -175,9 +176,10 @@
 .project-links-ul {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 25%;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
 }
 .project-p {
   margin: 0;
@@ -192,6 +194,16 @@
   width: 1.3rem;
   border: solid 1px #ef515f;
   box-shadow: inset 0 0 0 2px white;
+}
+
+@media (min-width: 500px){
+  .project-caption {
+    width: 80%;
+  }
+  .p-project-caption {
+    width: 70%;
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -217,6 +229,10 @@
     width: 70%;
     color: $text-primary;
     font-size: 1rem;
+  }
+
+  .project-links-ul {
+    font-size: 17px;
   }
 }
 

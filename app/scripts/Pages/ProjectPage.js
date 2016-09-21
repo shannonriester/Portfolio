@@ -70,7 +70,6 @@ export default React.createClass({
     }
 
     return (
-
       <div className="project-page">
         <Nav2 />
         <div className="project-content-container">
