@@ -40,7 +40,7 @@ const Examples = [
     hardest: 'The hardest part of this project was figuring out how to communicate with my teammates. Initially I struggled with the technical jargon and relaying what it was I wanted the code to do. Saying it outloud and using the right words is tough for a beginner. Talking about how we were going to animate one pokemon "attacking" the other, or why we needed to make a new constructor for each step of the way really solidified my understanding of how JavaScript works.',
   },
   {
-    name:'JeopardyGame',
+    name:'Jeopardy',
     imgHover: '/assets/Jeopardy/QuestionModal.png',
     image: '/assets/Jeopardy/GameBoard.png',
     projectImages: ['/assets/Jeopardy/QuestionModal.png', '/assets/Jeopardy/QuestionModalOld.png', '/assets/Jeopardy/Gameboard.png', '/assets/Jeopardy/Login.png', '/assets/Jeopardy/JeopardyAPI_Function.png'],
