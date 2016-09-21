@@ -390,12 +390,16 @@ p {
     cursor: default; }
 
 .next-btns {
+  z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 7rem;
-  margin: 0 auto;
-  margin-bottom: 1rem; }
+  justify-content: space-between;
+  width: 45rem;
+  margin: 0;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 320px;
+  left: 7px; }
 
 .slider-btn-ul {
   padding: 0;
@@ -417,7 +421,11 @@ p {
 
 .icon-arrow {
   color: #E83354;
-  font-size: 1.5rem; }
+  font-size: 2rem;
+  border: solid 1px;
+  border-radius: 50%;
+  padding: 3px 5px 3px 5px;
+  background: #FFF; }
   .icon-arrow:hover {
     cursor: pointer; }
 
@@ -654,8 +662,8 @@ p {
   margin-bottom: 29em; }
 
 #slide-out-left {
-  -webkit-animation: slide-out-left 500ms;
-  animation: slide-out-left 500ms; }
+  -webkit-animation: slide-out-left 400ms;
+  animation: slide-out-left 400ms; }
 
 @-webkit-keyframes slide-out-left {
   from {
@@ -674,8 +682,8 @@ p {
     transform: translateX(-100%);
     /* overflow-x: hidden;*/ } }
 #slide-out-right {
-  -webkit-animation: slide-out-right 500ms;
-  animation: slide-out-right 500ms; }
+  -webkit-animation: slide-out-right 400ms;
+  animation: slide-out-right 400ms; }
 
 @-webkit-keyframes slide-out-right {
   from {
@@ -694,8 +702,8 @@ p {
     transform: translateX(100%);
     /* overflow-x: hidden;*/ } }
 #slide-in-left {
-  -webkit-animation: slide-in-left 500ms;
-  animation: slide-in-left 500ms; }
+  -webkit-animation: slide-in-left 400ms;
+  animation: slide-in-left 400ms; }
 
 @-webkit-keyframes slide-in-left {
   from {
@@ -714,8 +722,8 @@ p {
     transform: translateX(0%);
     /* overflow-x: hidden;*/ } }
 #slide-in-right {
-  -webkit-animation: slide-in-right 500ms;
-  animation: slide-in-right 500ms; }
+  -webkit-animation: slide-in-right 400ms;
+  animation: slide-in-right 400ms; }
 
 @-webkit-keyframes slide-in-right {
   from {

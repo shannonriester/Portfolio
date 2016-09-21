@@ -23,7 +23,7 @@ export default React.createClass({
         i: newI,
         slide: 'slide-in-left',
     });
-    }, 500);
+  }, 400);
   },
   slideRight() {
     let newI;
@@ -40,7 +40,7 @@ export default React.createClass({
         i: newI,
         slide: 'slide-in-right',
     });
-    }, 500);
+  }, 400);
   },
   skipToImg(e) {
     this.setState({i: e.target.value})
