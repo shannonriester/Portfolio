@@ -369,11 +369,9 @@ p {
   margin: 0 auto;
   width: 68vw; }
 
-.project-page {
+.project-content-container {
   position: relative;
-  top: 4.5vh;
-  color: #FFF;
-  overflow: hidden; }
+  top: 2.5rem; }
 
 .project-heading {
   margin-bottom: 0;
@@ -385,7 +383,9 @@ p {
   margin-bottom: 1rem; }
 
 .project-img {
-  margin-bottom: 1rem; }
+  margin-bottom: 0rem;
+  height: 17em;
+  width: 24em; }
   .project-img:hover {
     cursor: default; }
 
@@ -394,12 +394,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 45rem;
-  margin: 0;
-  margin-bottom: 0;
-  position: absolute;
-  bottom: 320px;
-  left: 7px; }
+  margin: 0 auto;
+  width: 85%; }
 
 .slider-btn-ul {
   padding: 0;
@@ -523,9 +519,18 @@ p {
   height: 1.3rem;
   width: 1.3rem;
   border: solid 1px #ef515f;
-  box-shadow: inset 0 0 0 3px; }
+  box-shadow: inset 0 0 0 2px white; }
 
 @media (min-width: 600px) {
+  .project-img {
+    height: 20em;
+    width: 30em; }
+
+  .next-btns {
+    position: relative;
+    bottom: 20vh;
+    width: 33rem; }
+
   .project-caption {
     width: 75%;
     margin: 0 auto;
@@ -536,10 +541,22 @@ p {
     width: 70%;
     color: #555;
     font-size: 1rem; } }
+@media (min-width: 700px) {
+  .project-img {
+    height: 25em;
+    width: 35em; }
+
+  .next-btns {
+    bottom: 25vh;
+    width: 38rem; } }
 @media (min-width: 800px) {
   .project-img {
     height: 25em;
     width: 42em; }
+
+  .next-btns {
+    bottom: 27vh;
+    width: 45rem; }
 
   .project-caption {
     width: 72%;
@@ -551,6 +568,9 @@ p {
   .project-slider-component {
     margin: 0; } }
 @media (min-width: 1000px) {
+  .project-content-container {
+    top: 4.5rem; } }
+@media (min-width: 1100px) {
   .project-heading {
     margin-top: 3rem; }
 
@@ -571,14 +591,14 @@ p {
 
   .project-p {
     margin: 0;
-    width: 90%;
+    width: 85%;
     color: #555;
     font-size: .95rem;
     line-height: 1.3; } }
 @media (min-width: 1150px) {
   .project-p {
     line-height: 1.5;
-    width: 86%; } }
+    width: 80%; } }
 @media (min-width: 1250px) {
   .project-p {
     width: 27rem; } }
