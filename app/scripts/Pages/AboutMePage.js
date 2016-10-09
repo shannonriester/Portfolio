@@ -1,13 +1,11 @@
 import React from 'react';
 import Scroll from 'react-scroll';
-// var Link = Scroll.Link;
 
 import Nav from '../Components/Nav';
 
 export default React.createClass({
   render() {
     var Element = Scroll.Element;
-    // console.log(this.props);
     return (
       <div className="about-me-page">
         <Element name="AboutMe"/>
