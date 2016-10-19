@@ -15,7 +15,14 @@
   margin-bottom: 0;
   text-align: center;
   font-size: 2rem;
+}
+
+.h2-project-link {
   color: $primary;
+  &:hover {
+    cursor: pointer;
+    // text-decoration: underline;
+  }
 }
 
 .project-slider-component {

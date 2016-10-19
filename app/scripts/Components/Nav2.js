@@ -9,12 +9,20 @@ export default React.createClass({
     let link = e.target.innerHTML.split(' ').join('');
     browserHistory.push("/" + link);
   },
+  routeHome() {
+    browserHistory.push("/Home");
+  },
   componentDidMount() {
     $(".nav2-component").css({"background-color":"rgba(232, 51, 84, 1.0)"});
   },
   render() {
     return (
       <nav className="nav2-component">
+        <div className="nav-name" onClick={this.routeHome}>
+          <p className="name-p">Shannon Riester</p>
+          <p className="title-p">Web Developer</p>
+       </div>
+
         <ul className="nav-ul">
           <li className="nav-li">
             <Link to="Home"

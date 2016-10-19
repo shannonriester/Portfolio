@@ -46,7 +46,9 @@ export default React.createClass({
     //   "display": "none",
     // });
   },
-  componentDidMount() {},
+  componentDidMount() {
+    
+  },
   render() {
     let project = Examples.filter((example, i) => {
       if (this.props.params.project === example.name) {

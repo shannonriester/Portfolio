@@ -9,6 +9,9 @@ export default React.createClass({
     let link = e.target.innerHTML.split(' ').join('');
     browserHistory.push("/" + link);
   },
+  routeHome() {
+    browserHistory.push("/Home");
+  },
   componentDidMount() {
     $(window).scroll(function(){
         if ($(window).scrollTop() === 0){
@@ -32,7 +35,7 @@ export default React.createClass({
 
     return (
       <nav className="nav-component">
-        <div className="nav-name">
+      <div className="nav-name" onClick={this.routeHome}>
           <p className="name-p">Shannon Riester</p>
           <p className="title-p">Web Developer</p>
        </div>

@@ -47,6 +47,9 @@ export default React.createClass({
   skipToImg(e) {
     this.setState({i: e.target.value})
   },
+  routeLiveSite() {
+
+  },
   componentDidMount() {
     this.setState({i: 0});
   },
@@ -60,7 +63,8 @@ export default React.createClass({
     });
     return (
       <div className="project-slider-component">
-        <h2 className="project-heading">{this.props.project.name}</h2>
+        <h2 className="project-heading" onClick={this.routeLiveSite}><a className="h2-project-link" href={this.props.project.url}>
+{this.props.project.name}</a></h2>
         <figure className="portfolio-preview project-img"
                 id={this.state.slide}
                 style={{backgroundImage:`url(${this.state.images[this.state.i]})`}}></figure>
