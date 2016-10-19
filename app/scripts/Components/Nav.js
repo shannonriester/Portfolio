@@ -23,12 +23,6 @@ export default React.createClass({
         } else {
           $(".nav-component").css({"background-color":"#E83354"});
         }
-
-        if ($(window).scrollTop() > 650) {
-          $(".nav-name").css({"display": "flex"});
-        } else {
-          $(".nav-name").css({"display": "none"});
-        }
     });
   },
   render() {
