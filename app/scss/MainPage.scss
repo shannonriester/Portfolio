@@ -52,11 +52,11 @@
 
 .resume-btn {
   // color: $text-primary;
+  border: solid 2px $text-secondary;
   &:hover {
     transition: .5s;
     color: $primary;
     background: $text-secondary;
-    border: $text-secondary;
   }
 }
 
@@ -65,7 +65,9 @@
   background: $primary;
   &:hover {
     transition: .5s;
-    background: $primary;
+    background: $text-secondary;
+    color: $primary;
+    border: $text-secondary;
     a {
       color: $primary;
     }

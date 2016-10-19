@@ -11,20 +11,32 @@ export default React.createClass({
   },
   componentDidMount() {
     $(window).scroll(function(){
-        if($(window).scrollTop() === 0){
+        if ($(window).scrollTop() === 0){
             $(".nav-component").css({"background-color":"rgba(232, 51, 84, 0.0)"});
         }
-        else if ($(window).scrollTop() < 730){
+        else if ($(window).scrollTop() < 730) {
             $(".nav-component").css({
               "background-color":`rgba(227, 29, 78, ${$(window).scrollTop() / 2000 + 0.2})`});
         } else {
           $(".nav-component").css({"background-color":"#E83354"});
         }
+
+        if ($(window).scrollTop() > 650) {
+          $(".nav-name").css({"display": "flex"});
+        } else {
+          $(".nav-name").css({"display": "none"});
+        }
     });
   },
   render() {
+
     return (
       <nav className="nav-component">
+        <div className="nav-name">
+          <p className="name-p">Shannon Riester</p>
+          <p className="title-p">Web Developer</p>
+       </div>
+
         <ul className="nav-ul">
           <li className="nav-li">
             <Link to="Home"
@@ -61,6 +73,7 @@ export default React.createClass({
                   onClick={this.routeToLink}>Contact</Link>
           </li>
         </ul>
+
       </nav>
     );
   }

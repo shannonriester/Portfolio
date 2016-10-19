@@ -11,6 +11,28 @@
   // background: $background;
 }
 
+.nav-name {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 24%;
+  max-width: 15rem;
+
+  p {
+    color: #FFF;
+    font-weight: 800;
+  }
+
+  .title-p {
+    font-weight: 100;
+    opacity: .6;
+    font-size: 13px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
 .nav-ul {
   display: flex;
   align-items: center;
