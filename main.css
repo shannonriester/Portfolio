@@ -24,6 +24,8 @@
     font-size: 13px;
     width: 90%;
     margin: 0 auto; }
+  .nav-name:hover {
+    cursor: pointer; }
 
 .nav-ul {
   display: flex;
@@ -397,8 +399,12 @@ p {
 .project-heading {
   margin-bottom: 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2rem; }
+
+.h2-project-link {
   color: #10B8C7; }
+  .h2-project-link:hover {
+    cursor: pointer; }
 
 .project-slider-component {
   margin-bottom: 1rem; }
