@@ -30,11 +30,11 @@ export default React.createClass({
     this.setState({sentEmail: true});
     window.setTimeout(() => {
       this.setState({sentEmail: false});
+      this.refs.email.value = '';
+      this.refs.subject.value = '';
+      this.refs.message.value = '';
     }, 7000);
 
-    this.refs.email.value = '';
-    this.refs.subject.value = '';
-    this.refs.message.value = '';
   },
   render() {
     let contact;
