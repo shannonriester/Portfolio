@@ -76,5 +76,16 @@
 @media(min-width: 950px) {
   .nav-ul {
     width: 50%;
+    margin-left: 10rem;
+  }
+}
+@media(min-width: 1200px) {
+  .nav-ul {
+    margin-left: 15rem;
+  }
+}
+@media(min-width: 1300px) {
+  .nav-ul {
+    margin-left: 25rem;
   }
 }
