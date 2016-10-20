@@ -13,19 +13,20 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 24%;
+  width: 45%;
   max-width: 15rem; }
   .nav-name p {
     color: #FFF;
     font-weight: 800; }
-  .nav-name .title-p {
-    font-weight: 100;
-    opacity: .6;
-    font-size: 13px;
-    width: 90%;
-    margin: 0 auto; }
   .nav-name:hover {
     cursor: pointer; }
+
+.title-p {
+  font-weight: 100;
+  opacity: .6;
+  font-size: 13px;
+  width: 100%;
+  margin: 0 auto; }
 
 .nav-ul {
   display: flex;
@@ -52,12 +53,29 @@
     transition: .5s;
     border-bottom: solid 1px #FFF; }
 
+@media (min-width: 550px) {
+  .nav-name {
+    margin-left: 1rem; } }
+@media (min-width: 650px) {
+  .title-p {
+    width: 90%; } }
 @media (min-width: 700px) {
   .nav-ul {
     width: 70%; } }
 @media (min-width: 950px) {
   .nav-ul {
-    width: 50%; } }
+    width: 50%;
+    margin-left: 10rem; }
+
+  .nav-name {
+    width: 24%;
+    margin-right: 8rem; } }
+@media (min-width: 1200px) {
+  .nav-ul {
+    margin-left: 15rem; } }
+@media (min-width: 1300px) {
+  .nav-ul {
+    margin-left: 25rem; } }
 .connect-nav-component {
   height: 65vh;
   width: 100%;
