@@ -787,6 +787,15 @@ p {
   width: 12em;
   margin-bottom: 29em; }
 
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.shake {
+  animation: shake .4s; }
+
 #slide-out-left {
   -webkit-animation: slide-out-left 400ms;
   animation: slide-out-left 400ms; }
@@ -867,6 +876,19 @@ p {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
     /* overflow-x: hidden;*/ } }
+@keyframes shake {
+  0% {
+    transform: translateX(20px); }
+  20% {
+    transform: translateX(-20px); }
+  40% {
+    transform: translateX(15px); }
+  60% {
+    transform: translateX(-15px); }
+  80% {
+    transform: translateX(7px); }
+  100% {
+    transform: translateX(-7px); } }
 body {
   margin: 0;
   padding: 0;
