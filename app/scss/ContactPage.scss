@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 93vh;
     color: $headings;
 }
 
@@ -17,9 +16,9 @@
 }
 
 .contact-h2 {
-  font-size: 2em;
-  width: 6em;
-  margin: 35px 0 0 0;
+  font-size: 2rem;
+  width: 12rem;
+  margin: 1rem 0 0 0;
 }
 
 .my-email {
@@ -41,7 +40,6 @@
   display: none;
   text-align: left;
   width: 60%;
-  // margin: 10px 0;
 }
 
 .contact-message {
@@ -62,7 +60,7 @@
 .contact-btn {
   width: 60%;
   height: 2.5em;
-  margin: .5em 0 0 0;
+  margin: 1rem 0;
   color: $primary;
   background: none;
   font-size: 1em;

@@ -1,5 +1,4 @@
 .connect-nav-component {
-  height: 65vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,8 +12,12 @@
   align-items: flex-start;
   justify-content: space-around;
   width: 100%;
-  margin: 0;
+  margin: 2rem 0;
   padding: 0;
+
+  li {
+    margin: 1rem 0;
+  }
 }
 
 .connect-icon {
@@ -29,7 +32,6 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  // height: 100%;
   list-style-type: none;
 
   a {
@@ -70,10 +72,6 @@
 
 
 @media (min-width: 850px) {
-  .connect-nav-component {
-    height: 45vh;
-  }
-
   .connect-li {
     width: 25%;
     p {
@@ -85,7 +83,6 @@
 
 @media (min-width: 1000px) {
   .connect-nav-component {
-    height: 40vh;
     border-top: solid 1px $border-lite;
     border-bottom: none;
   }
