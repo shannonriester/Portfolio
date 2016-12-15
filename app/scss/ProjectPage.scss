@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 215px;
+  // height: 215px;
   margin-bottom: 1rem;
 }
 
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 215px;
   width: 16%;
   border-top: solid 1px $background-lite;
   border-bottom: solid 1px $background-lite;
@@ -53,7 +53,7 @@
 
 .project-img {
   margin: 0;
-  height: 100%;
+  height: 215px;
   width: 24em;
   background-size: contain;
   &:hover {
@@ -238,6 +238,10 @@
 }
 
 @media (min-width: 600px) {
+  .arrow-div {
+    height: 260px;
+  }
+
   .project-img {
     height: 20em;
     width: 30em;
@@ -273,6 +277,10 @@
     width: 35em;
   }
 
+  .arrow-div {
+    height: 304px;
+  }
+
   .next-btns {
     bottom: 25vh;
     width: 38rem;
@@ -283,6 +291,10 @@
   .project-img {
     height: 25em;
     width: 42em;
+  }
+
+  .arrow-div {
+    height: 371px;
   }
 
   .next-btns {
@@ -314,6 +326,10 @@
   .project-content-container {
     top: 4.5rem;
   }
+
+  .arrow-div {
+    width: 18%;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -328,7 +344,13 @@
   }
 
   .project-img {
-    margin-left: 2rem;
+    margin-left: 0rem;
+  }
+
+  .arrow-div {
+    width: 10%;
+    height: 346px;
+    margin-right: 8px;
   }
 
   .project-caption {
@@ -338,11 +360,12 @@
   .project-ul {
     position: relative;
     bottom: 2rem;
+    background-color: white;
   }
 
   .project-p {
-    margin: 0;
-    width: 85%;
+    margin: 10px 0 0 0;
+    width: 90%;
     color: $text-primary;
     font-size: .95rem;
     line-height: 1.3;
