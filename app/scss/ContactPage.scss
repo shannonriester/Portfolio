@@ -89,3 +89,14 @@
   width: 12em;
   margin-bottom: 29em;
 }
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shake {
+  animation: shake .4s;
+}
