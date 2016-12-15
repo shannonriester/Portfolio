@@ -435,7 +435,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 215px;
   margin-bottom: 1rem; }
 
 .arrow-div {
@@ -444,7 +443,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 215px;
   width: 16%;
   border-top: solid 1px #F5F5F5;
   border-bottom: solid 1px #F5F5F5; }
@@ -457,8 +456,9 @@ p {
 
 .project-img {
   margin: 0;
-  height: 100%;
+  height: 215px;
   width: 24em;
+  min-width: 22em;
   background-size: contain; }
   .project-img:hover {
     cursor: default; }
@@ -605,6 +605,9 @@ p {
     width: 70%;
     margin-left: 10px; } }
 @media (min-width: 600px) {
+  .arrow-div {
+    height: 260px; }
+
   .project-img {
     height: 20em;
     width: 30em; }
@@ -632,6 +635,9 @@ p {
     height: 25em;
     width: 35em; }
 
+  .arrow-div {
+    height: 304px; }
+
   .next-btns {
     bottom: 25vh;
     width: 38rem; } }
@@ -639,6 +645,9 @@ p {
   .project-img {
     height: 25em;
     width: 42em; }
+
+  .arrow-div {
+    height: 371px; }
 
   .next-btns {
     bottom: 27vh;
@@ -655,7 +664,10 @@ p {
     margin: 0; } }
 @media (min-width: 1000px) {
   .project-content-container {
-    top: 4.5rem; } }
+    top: 4.5rem; }
+
+  .arrow-div {
+    width: 18%; } }
 @media (min-width: 1100px) {
   .project-heading {
     margin-top: 3rem; }
@@ -666,18 +678,27 @@ p {
     justify-content: center; }
 
   .project-img {
-    margin-left: 2rem; }
+    margin: 0; }
+
+  .arrow-div {
+    width: 10%;
+    height: 346px; }
+
+  .slider-btn-ul {
+    margin-top: 1rem; }
 
   .project-caption {
     width: 35rem; }
 
   .project-ul {
     position: relative;
-    bottom: 2rem; }
+    bottom: 28px;
+    left: 10px;
+    background-color: white; }
 
   .project-p {
-    margin: 0;
-    width: 85%;
+    margin: 10px 0 0 0;
+    width: 90%;
     color: #555;
     font-size: .95rem;
     line-height: 1.3; }
