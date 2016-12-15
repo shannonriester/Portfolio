@@ -1,4 +1,4 @@
-const Examples = [
+let projects = [
   {
     name:'Waggle',
     image: '/assets/Waggle/SearchResultsPage.png',
@@ -49,10 +49,18 @@ const Examples = [
     githubUrl: 'https://github.com/shannonriester/Day-33-Jeopardy',
     day: 'Day 33',
     length: '1 week',
-    // prompt: 'A local music venue has asked you to build a promotional app: Bring The Band! Bring the band will allow users to vote for musicians they want to see at the venue. The venue hopes to gain a following, and boost their patron engagement by tracking popular bands, and trends in their market share.',
     best: 'The most satisfying part of this project was realizing I was becomming a real programmer. I knew I was going to make it. It felt so good to think that I can depend on myself and build something from nothing. Jeopardy\'s API was not an easy API for work with, so the end result of a functioning game felt amazing to know every single line of code was mine. This game also really helped my fellow calssmates to really open up with one another. We would randomly quiz each other on the categories that we were currently viewing and then help one another immediately when something would go wrong. It was also really great to see my process and design development—recently I went back to change around some of the styles...seeing the before and after is as satisfying as it is embarassing...',
     hardest: 'The Jeopardy API was the hardest part about this project. I was able to generate random categories farily easily, but then I had to filter though each individual category, and only select/display the categories with the correct score values (e.g.$200, $400, $800, etc.). Most of the categories don\'t have every value available or have several of the same values. I\'m most proud of my function that calls to the Jeopardy API and filters through to get the desired, random results.',
   },
 ]
 
-export default Examples;
+projects.map((project, i) => {
+  let imgSrcArr = project.projectImages.map((imgSrc, i) => {
+    let image = new Image();
+    image.src = imgSrc;
+    return image.src;
+  });
+  project.projectImages = imgSrcArr;
+});
+
+export default projects;
