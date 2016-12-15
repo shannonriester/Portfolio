@@ -18,9 +18,6 @@ export default React.createClass({
   hideFooter() {
     this.setState({hoverImg: false});
   },
-  componentDidMount() {
-
-  },
   render() {
     let project = this.state.project;
     let footer;

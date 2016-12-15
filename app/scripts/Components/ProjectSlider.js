@@ -63,15 +63,23 @@ export default React.createClass({
     });
     return (
       <div className="project-slider-component">
-        <h2 className="project-heading" onClick={this.routeLiveSite}><a className="h2-project-link" href={this.props.project.url}>
-{this.props.project.name}</a></h2>
-        <figure className="portfolio-preview project-img"
-                id={this.state.slide}
-                style={{backgroundImage:`url(${this.state.images[this.state.i]})`}}></figure>
-        <section className="next-btns">
-          <i className="icon-arrow left fa fa-arrow-left" aria-hidden="true" onClick={this.slideRight}></i>
-          <i className="icon-arrow right fa fa-arrow-right" aria-hidden="true" onClick={this.slideLeft}></i>
-        </section>
+        <h2 className="project-heading" onClick={this.routeLiveSite}>
+          <a className="h2-project-link" href={this.props.project.url}>{this.props.project.name}</a>
+        </h2>
+        <div className="project-images-container">
+          <div className="arrow-div prev-div" onClick={this.slideRight}><i className="fa fa-arrow-left" aria-hidden="true" onClick={this.slideRight}></i></div>
+          <figure className="portfolio-preview project-img"
+                  id={this.state.slide}
+                  style={{backgroundImage:`url(${this.state.images[this.state.i]})`}}>
+          </figure>
+          <div className="arrow-div next-div" onClick={this.slideLeft}><i className="fa fa-arrow-right" aria-hidden="true" onClick={this.slideLeft}></i></div>
+        </div>
+        {
+        // <section className="next-btns">
+        //
+        //
+        // </section>
+        }
         <ul className="slider-btn-ul">
           {sliderBtns}
         </ul>
@@ -91,7 +99,6 @@ export default React.createClass({
             </a>
           </li>
         </ul>
-
         </figcaption>
 
       </div>

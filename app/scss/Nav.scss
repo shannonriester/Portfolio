@@ -8,7 +8,12 @@
   justify-content: flex-end;
   height: 8vh;
   width: 100%;
-  // background: $background;
+}
+
+.nav2-component {
+  position: static;
+  height: initial;
+  padding: 1rem 0;
 }
 
 .nav-name {
@@ -26,7 +31,6 @@
   &:hover {
     cursor: pointer;
   }
-
 }
 
 .title-p {

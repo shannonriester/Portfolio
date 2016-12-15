@@ -17,37 +17,15 @@ export default React.createClass({
       highlights: !this.state.highlights,
       hardest: false,
     });
-    // $('.project-best').css({
-    //   "height": "100%",
-    //   "transition": ".5s",
-    // });
-    // $('.project-p-best').css({
-    //   "display": "block",
-    //   "transition": ".5s",
-    // });
-    // $('.project-p-hardest').css({
-    //   "display": "none",
-    // });
   },
   toggleHardest() {
     this.setState({
       highlights: false,
       hardest: !this.state.hardest,
     });
-    // $('.project-hardest').css({
-    //   "height": "100%",
-    //   "transition": ".5s",
-    // });
-    // $('.project-p-hardest').css({
-    //   "display": "block",
-    //   "transition": ".5s",
-    // });
-    // $('.project-p-best').css({
-    //   "display": "none",
-    // });
   },
   componentDidMount() {
-    
+
   },
   render() {
     let project = Examples.filter((example, i) => {
