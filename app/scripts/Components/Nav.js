@@ -15,10 +15,8 @@ export default React.createClass({
       let latitude = geoplugin_latitude();
       let longitude = geoplugin_longitude();
       let date = new Date();
-      console.log('The location is: ' + country + ', ' + zone + ', ' + district + ' at ' + date);
-      console.log('lat: ', latitude);
+      // console.log('The location is: ' + country + ', ' + zone + ', ' + district + ' at ' + date);
       console.log('working');
-      console.log('longe: ', longitude);
 
         store.adminCollection.save({
           country: country,
@@ -47,6 +45,8 @@ export default React.createClass({
     browserHistory.push('/Home');
   },
   componentDidMount() {
+    store.adminCollection.fetch();
+
     $(window).scroll(function() {
         if ($(window).scrollTop() === 0){
             $('.nav-component').css({'background-color':'rgba(232, 51, 84, 0.0)'});
@@ -62,6 +62,7 @@ export default React.createClass({
     this.track();
   },
   render() {
+    console.log(store.adminCollection);
 
     return (
       <nav className='nav-component'>
