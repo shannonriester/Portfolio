@@ -7,7 +7,7 @@ import moment from 'moment';
 import store from '../store'
 
 export default React.createClass({
-  track() {
+  // track() {
     // $.getScript('http://www.geoplugin.net/javascript.gp', function() {
     //   let country = geoplugin_countryName();
     //   let regionCode = geoplugin_region();
@@ -36,7 +36,7 @@ export default React.createClass({
       //   },
       // });
     // });
-  },
+  // },
   routeToLink(e) {
     let link = e.target.innerHTML.split(' ').join('');
     browserHistory.push('/' + link);

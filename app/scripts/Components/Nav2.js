@@ -5,7 +5,7 @@ import Scroll from 'react-scroll';
 var Link = Scroll.Link;
 
 export default React.createClass({
-  track() {
+  // track() {
     // $.getScript('http://www.geoplugin.net/javascript.gp', function() {
     //   let country = geoplugin_countryName();
     //   let regionCode = geoplugin_region();
@@ -34,7 +34,7 @@ export default React.createClass({
     //     },
     //   });
     // });
-  },
+  // },
   routeToLink(e) {
     let link = e.target.innerHTML.split(' ').join('');
     browserHistory.push("/" + link);
@@ -43,11 +43,11 @@ export default React.createClass({
     browserHistory.push("/Home");
   },
   componentDidMount() {
-    store.adminCollection.fetch();
+    // store.adminCollection.fetch();
 
     $(".nav2-component").css({"background-color":"rgba(232, 51, 84, 1.0)"});
 
-    this.track();
+    // this.track();
   },
   render() {
     return (
