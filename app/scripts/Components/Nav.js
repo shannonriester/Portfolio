@@ -8,34 +8,34 @@ import store from '../store'
 
 export default React.createClass({
   track() {
-    jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() {
-      let country = geoplugin_countryName();
-      let regionCode = geoplugin_region();
-      let district = geoplugin_city();
-      let latitude = geoplugin_latitude();
-      let longitude = geoplugin_longitude();
-      let date = new Date();
-      // console.log('The location is: ' + country + ', ' + zone + ', ' + district + ' at ' + date);
-      console.log('working');
+    // $.getScript('http://www.geoplugin.net/javascript.gp', function() {
+    //   let country = geoplugin_countryName();
+    //   let regionCode = geoplugin_region();
+    //   let district = geoplugin_city();
+    //   let latitude = geoplugin_latitude();
+    //   let longitude = geoplugin_longitude();
+    //   let date = new Date();
+    //   // console.log('The location is: ' + country + ', ' + zone + ', ' + district + ' at ' + date);
+    //   console.log('working');
 
-        store.adminCollection.save({
-          country: country,
-          regionCode: regionCode,
-          district: district,
-          latitude: latitude,
-          longitude: longitude,
-          date: date,
-        },
-        { url: `https://baas.kinvey.com/user/kid_H1o3YfRo/Visitors`,
-          type: 'POST',
-          success: (model, response) => {
-            console.log('SUCCESS', response);
-        },
-         error: function(model, response) {
-           throw new Error('LOGIN FAILED');
-        },
-      });
-    });
+      //   store.adminCollection.save({
+      //     country: country,
+      //     regionCode: regionCode,
+      //     district: district,
+      //     latitude: latitude,
+      //     longitude: longitude,
+      //     date: date,
+      //   },{
+      //   url: `https://baas.kinvey.com/user/kid_H1o3YfRo/Visitors`,
+      //   type: 'POST',
+      //   success: (model, response) => {
+      //     console.log('SUCCESS', response);
+      //   },
+      //    error: function(model, response) {
+      //      throw new Error('LOGIN FAILED');
+      //   },
+      // });
+    // });
   },
   routeToLink(e) {
     let link = e.target.innerHTML.split(' ').join('');
@@ -45,7 +45,7 @@ export default React.createClass({
     browserHistory.push('/Home');
   },
   componentDidMount() {
-    store.adminCollection.fetch();
+    // store.adminCollection.fetch();
 
     $(window).scroll(function() {
         if ($(window).scrollTop() === 0){
@@ -59,7 +59,7 @@ export default React.createClass({
         }
     });
 
-    this.track();
+    // this.track();
   },
   render() {
     console.log(store.adminCollection);

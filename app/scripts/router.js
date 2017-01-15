@@ -19,9 +19,7 @@ const router = (
     <Route path="/Projects/:project" component={ProjectPage} />
     <Route path="/Connect" component={MainPage} />
     <Route path="/Contact" component={MainPage} />
-
     <Route path="/*" component={MainPage} />
-
   </Router>
 );
 
