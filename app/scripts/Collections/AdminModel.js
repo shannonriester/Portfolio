@@ -1,6 +1,6 @@
 import Backbone from 'backbone';
 
-export default Backbone.Model.extend({
+const AdminModel = Backbone.Model.extend({
   idAttribute: '_id',
   urlRoot:`https://baas.kinvey.com/appdata/kid_H1o3YfRo/Visitors`,
   defaults: {
@@ -12,3 +12,5 @@ export default Backbone.Model.extend({
     date: ''
   },
 });
+
+export default AdminModel;

@@ -6,7 +6,7 @@ var Link = Scroll.Link;
 
 export default React.createClass({
   track() {
-    jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() {
+    $.getScript('http://www.geoplugin.net/javascript.gp', function() {
       let country = geoplugin_countryName();
       let regionCode = geoplugin_region();
       let district = geoplugin_city();

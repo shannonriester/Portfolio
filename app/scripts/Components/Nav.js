@@ -8,14 +8,14 @@ import store from '../store'
 
 export default React.createClass({
   track() {
-    jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() {
+    $.getScript('http://www.geoplugin.net/javascript.gp', function() {
       let country = geoplugin_countryName();
       let regionCode = geoplugin_region();
       let district = geoplugin_city();
       let latitude = geoplugin_latitude();
       let longitude = geoplugin_longitude();
       let date = new Date();
-      // console.log('The location is: ' + country + ', ' + zone + ', ' + district + ' at ' + date);
+      console.log('The location is: ' + country + ', ' + zone + ', ' + district + ' at ' + date);
       console.log('working');
 
         store.adminCollection.save({
@@ -26,7 +26,7 @@ export default React.createClass({
           longitude: longitude,
           date: date,
         },
-        { url: `https://baas.kinvey.com/user/kid_H1o3YfRo/Visitors`,
+        { url: `https://baas.kinvey.com/user/kid_H1o3YfR/Visitors`,
           type: 'POST',
           success: (model, response) => {
             console.log('SUCCESS', response);
@@ -62,7 +62,7 @@ export default React.createClass({
     this.track();
   },
   render() {
-    console.log(store.adminCollection);
+    // console.log('admin collection: ', store.adminCollection);
 
     return (
       <nav className='nav-component'>
