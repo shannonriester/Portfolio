@@ -1,9 +1,5 @@
 import React from 'react';
-import { Router, browserHistory, IndexRoute, Route } from 'react-router';
-import Scroll from 'react-scroll';
-
-var Link = Scroll.Link;
-
+import { Router, browserHistory, Route } from 'react-router';
 import MainPage from './Pages/MainPage';
 import AboutMePage from './Pages/AboutMePage';
 import PortfolioPage from './Pages/PortfolioPage';

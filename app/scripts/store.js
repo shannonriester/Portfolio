@@ -1,5 +1,7 @@
 import AdminCollection from './Collections/AdminCollection';
 
-export default {
-  adminCollection: new AdminCollection(),
-}
+const store = {
+  // adminCollection: new AdminCollection(),
+};
+
+export default store;

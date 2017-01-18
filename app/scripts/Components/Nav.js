@@ -4,39 +4,39 @@ import $ from 'jquery';
 import Scroll from 'react-scroll';
 var Link = Scroll.Link;
 import moment from 'moment';
-import store from '../store'
+// import store from '../store'
 
 export default React.createClass({
-  // track() {
-    // $.getScript('http://www.geoplugin.net/javascript.gp', function() {
-    //   let country = geoplugin_countryName();
-    //   let regionCode = geoplugin_region();
-    //   let district = geoplugin_city();
-    //   let latitude = geoplugin_latitude();
-    //   let longitude = geoplugin_longitude();
-    //   let date = new Date();
-    //   // console.log('The location is: ' + country + ', ' + zone + ', ' + district + ' at ' + date);
-    //   console.log('working');
+  track() {
+    $.getScript('http://www.geoplugin.net/javascript.gp', function() {
+      let country = geoplugin_countryName();
+      let regionCode = geoplugin_region();
+      let district = geoplugin_city();
+      let latitude = geoplugin_latitude();
+      let longitude = geoplugin_longitude();
+      let date = new Date();
+      // console.log('The location is: ' + country + ', ' + zone + ', ' + district + ' at ' + date);
+      console.log('working');
 
-      //   store.adminCollection.save({
-      //     country: country,
-      //     regionCode: regionCode,
-      //     district: district,
-      //     latitude: latitude,
-      //     longitude: longitude,
-      //     date: date,
-      //   },{
-      //   url: `https://baas.kinvey.com/user/kid_H1o3YfRo/Visitors`,
-      //   type: 'POST',
-      //   success: (model, response) => {
-      //     console.log('SUCCESS', response);
-      //   },
-      //    error: function(model, response) {
-      //      throw new Error('LOGIN FAILED');
-      //   },
-      // });
-    // });
-  // },
+        store.adminCollection.save({
+          country: country,
+          regionCode: regionCode,
+          district: district,
+          latitude: latitude,
+          longitude: longitude,
+          date: date,
+        },{
+        url: `https://baas.kinvey.com/user/kid_H1o3YfRo/Visitors`,
+        type: 'POST',
+        success: (model, response) => {
+          console.log('SUCCESS', response);
+        },
+         error: function(model, response) {
+           throw new Error('LOGIN FAILED');
+        },
+      });
+    });
+  },
   routeToLink(e) {
     let link = e.target.innerHTML.split(' ').join('');
     browserHistory.push('/' + link);
@@ -45,8 +45,6 @@ export default React.createClass({
     browserHistory.push('/Home');
   },
   componentDidMount() {
-    // store.adminCollection.fetch();
-
     $(window).scroll(function() {
         if ($(window).scrollTop() === 0){
             $('.nav-component').css({'background-color':'rgba(232, 51, 84, 0.0)'});

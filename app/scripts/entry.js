@@ -3,7 +3,14 @@ import ReactDOM from 'react-dom';
 import router from './router';
 import $ from 'jquery';
 
+
 ReactDOM.render(router, document.getElementById('container'));
+
+// var authorization = btoa('kid_H1o3YfRo:10234b95ae9244c1bfebf784d8c512cf');
+//
+// $(document).ajaxSend(function(evt, xhrAjax, jqueryAjax) {
+//     xhrAjax.setRequestHeader('Authorization', 'Basic ' + authorization);
+// });
 
 
 // let basicAuth = btoa('kid_H1o3YfRo:10234b95ae9244c1bfebf784d8c512cf');
